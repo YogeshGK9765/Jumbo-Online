@@ -1,0 +1,2351 @@
+<!DOCTYPE html>
+<html lang="mr" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>जम्बो ऑनलाईन सेंटर | Jumbo Online Center - CSC, Aaple Sarkar, Digital Services Ahmedpur</title>
+  <meta name="description" content="जम्बो ऑनलाईन सेंटर, अहमदपूर - CSC सेवा, आपले सरकार सेवा, आधार, पॅन कार्ड, जात प्रमाणपत्र, उत्पन्न प्रमाणपत्र, शिष्यवृत्ती आणि सर्व डिजिटल सेवा. Jumbo Online Center Ahmedpur - All Government & Digital Services."/>
+  <meta name="keywords" content="Jumbo Online Center, जम्बो ऑनलाईन सेंटर, Ahmedpur, अहमदपूर, CSC, Aaple Sarkar, आपले सरकार, digital services, caste certificate, income certificate, PAN card, Aadhaar, MahaDBT, scholarship"/>
+  <meta name="author" content="Taleem Tamboli"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://jumboonlinecenter.github.io/"/>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="जम्बो ऑनलाईन सेंटर | Jumbo Online Center"/>
+  <meta property="og:description" content="अहमदपूर मधील सर्वोत्तम डिजिटल सेवा केंद्र. CSC, आपले सरकार, आधार, पॅन कार्ड आणि सर्व शासकीय सेवा."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="mr_IN"/>
+  <meta property="og:url" content="https://jumboonlinecenter.github.io/"/>
+  <meta property="og:image" content="assets/Logo.jpeg"/>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Jumbo Online Center (जम्बो ऑनलाईन सेंटर)",
+    "description": "CSC Services, Aaple Sarkar Services, and All Digital Services in Ahmedpur, Maharashtra",
+    "url": "https://jumboonlinecenter.github.io/",
+    "telephone": "+918830032975",
+    "email": "jamboonline2021@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Mahatma Phule College Near Said, New Vidhya Nagar",
+      "addressLocality": "Ahmedpur",
+      "addressRegion": "Maharashtra",
+      "postalCode": "413515",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 18.700008,
+      "longitude": 76.933292
+    },
+    "owner": {
+      "@type": "Person",
+      "name": "Taleem Tamboli"
+    },
+    "openingHours": "Mo-Sa 09:00-19:00"
+  }
+  </script>
+
+  <style>
+    /* ═══════════════════════════════════════════════════════
+       DESIGN SYSTEM — CSS Custom Properties
+       ═══════════════════════════════════════════════════════ */
+    :root {
+      /* Light Mode Colors */
+      --bg-primary: #f0f4f8;
+      --bg-secondary: #ffffff;
+      --bg-tertiary: #e8edf3;
+      --bg-glass: rgba(255, 255, 255, 0.65);
+      --bg-glass-strong: rgba(255, 255, 255, 0.85);
+      --bg-hero: linear-gradient(135deg, #0a1628 0%, #1a2d4a 30%, #0d2137 60%, #162b45 100%);
+
+      --accent-primary: #2563eb;
+      --accent-primary-light: #3b82f6;
+      --accent-primary-dark: #1d4ed8;
+      --accent-secondary: #f59e0b;
+      --accent-secondary-light: #fbbf24;
+      --accent-csc: #16a34a;
+      --accent-csc-light: #22c55e;
+      --accent-danger: #ef4444;
+      --accent-whatsapp: #25d366;
+      --accent-gradient: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+      --accent-gradient-warm: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+      --accent-gradient-green: linear-gradient(135deg, #16a34a 0%, #059669 100%);
+
+      --text-primary: #1e293b;
+      --text-secondary: #64748b;
+      --text-tertiary: #94a3b8;
+      --text-inverse: #ffffff;
+
+      --border-color: rgba(0, 0, 0, 0.08);
+      --border-glass: rgba(255, 255, 255, 0.3);
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 16px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
+      --shadow-lg: 0 12px 40px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.06);
+      --shadow-xl: 0 20px 60px rgba(0,0,0,0.15), 0 8px 20px rgba(0,0,0,0.08);
+      --shadow-glow: 0 0 30px rgba(37, 99, 235, 0.15);
+
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+      --radius-full: 9999px;
+
+      --font-heading: 'Outfit', 'Noto Sans Devanagari', sans-serif;
+      --font-body: 'Noto Sans Devanagari', 'Outfit', system-ui, sans-serif;
+
+      --transition-fast: 0.2s ease;
+      --transition-normal: 0.3s ease;
+      --transition-slow: 0.5s ease;
+
+      --container-max: 1200px;
+      --header-height: 70px;
+    }
+
+    /* Dark Mode */
+    [data-theme="dark"] {
+      --bg-primary: #0b1121;
+      --bg-secondary: #131b2e;
+      --bg-tertiary: #1a2540;
+      --bg-glass: rgba(19, 27, 46, 0.75);
+      --bg-glass-strong: rgba(19, 27, 46, 0.92);
+      --bg-hero: linear-gradient(135deg, #030712 0%, #0f172a 30%, #020617 60%, #0f172a 100%);
+
+      --accent-primary: #3b82f6;
+      --accent-primary-light: #60a5fa;
+      --accent-primary-dark: #2563eb;
+
+      --text-primary: #e2e8f0;
+      --text-secondary: #94a3b8;
+      --text-tertiary: #64748b;
+      --text-inverse: #0f172a;
+
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-glass: rgba(255, 255, 255, 0.1);
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.2);
+      --shadow-md: 0 4px 16px rgba(0,0,0,0.3);
+      --shadow-lg: 0 12px 40px rgba(0,0,0,0.4);
+      --shadow-xl: 0 20px 60px rgba(0,0,0,0.5);
+      --shadow-glow: 0 0 30px rgba(59, 130, 246, 0.2);
+    }
+
+    /* ═══════════════════════════════════════════════════════
+       RESET & BASE
+       ═══════════════════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: calc(var(--header-height) + 20px);
+    }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+      overflow-x: hidden;
+      transition: background var(--transition-normal), color var(--transition-normal);
+    }
+
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    button { border: none; cursor: pointer; font-family: inherit; }
+
+    .container {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .section-padding { padding: 80px 0; }
+
+    /* ═══════════════════════════════════════════════════════
+       ANIMATIONS
+       ═══════════════════════════════════════════════════════ */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInLeft {
+      from { opacity: 0; transform: translateX(-30px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes fadeInRight {
+      from { opacity: 0; transform: translateX(30px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes scaleIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    @keyframes shimmer {
+      0% { background-position: -200% center; }
+      100% { background-position: 200% center; }
+    }
+    @keyframes slideDown {
+      from { opacity: 0; max-height: 0; }
+      to { opacity: 1; max-height: 800px; }
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .animate-on-scroll {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .animate-on-scroll.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ═══════════════════════════════════════════════════════
+       HEADER / NAVIGATION
+       ═══════════════════════════════════════════════════════ */
+    #main-header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      height: var(--header-height);
+      background: var(--bg-glass-strong);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border-color);
+      transition: all var(--transition-normal);
+    }
+    #main-header.scrolled {
+      box-shadow: var(--shadow-md);
+    }
+    .header-container {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 20px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .header-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+    .header-logo {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      object-fit: contain;
+    }
+    .header-brand-text h1 {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--accent-primary);
+      line-height: 1.2;
+    }
+    .header-brand-text small {
+      font-size: 0.65rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    /* Desktop Nav */
+    .nav-desktop {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .nav-desktop a {
+      padding: 8px 14px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      border-radius: var(--radius-sm);
+      transition: all var(--transition-fast);
+      white-space: nowrap;
+    }
+    .nav-desktop a:hover, .nav-desktop a.active {
+      color: var(--accent-primary);
+      background: rgba(37, 99, 235, 0.08);
+    }
+
+    /* Header Controls */
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+    .btn-icon {
+      width: 38px; height: 38px;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: var(--radius-sm);
+      background: var(--bg-tertiary);
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      transition: all var(--transition-fast);
+    }
+    .btn-icon:hover {
+      background: var(--accent-primary);
+      color: var(--text-inverse);
+      transform: scale(1.05);
+    }
+    .lang-toggle {
+      padding: 6px 12px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      border-radius: var(--radius-full);
+      background: var(--accent-gradient);
+      color: #fff;
+      letter-spacing: 0.5px;
+      transition: all var(--transition-fast);
+    }
+    .lang-toggle:hover { transform: scale(1.05); box-shadow: var(--shadow-glow); }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      width: 28px;
+      background: none;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      height: 2.5px;
+      background: var(--text-primary);
+      border-radius: 2px;
+      transition: all var(--transition-fast);
+    }
+    .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    /* Mobile Nav */
+    .nav-mobile {
+      display: none;
+      position: fixed;
+      top: var(--header-height);
+      left: 0; right: 0;
+      background: var(--bg-glass-strong);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 16px 20px;
+      animation: fadeInDown 0.3s ease;
+      z-index: 999;
+      max-height: calc(100vh - var(--header-height));
+      overflow-y: auto;
+    }
+    .nav-mobile.active { display: block; }
+    .nav-mobile a {
+      display: block;
+      padding: 12px 16px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      border-radius: var(--radius-sm);
+      transition: all var(--transition-fast);
+    }
+    .nav-mobile a:hover {
+      color: var(--accent-primary);
+      background: rgba(37, 99, 235, 0.08);
+    }
+
+    /* CSC / Aaple Sarkar badges */
+    .brand-badges {
+      display: flex;
+      gap: 6px;
+      margin-top: 6px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 10px;
+      font-size: 0.6rem;
+      font-weight: 700;
+      border-radius: var(--radius-full);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .badge-csc {
+      background: linear-gradient(135deg, #16a34a, #059669);
+      color: #fff;
+    }
+    .badge-aaple {
+      background: linear-gradient(135deg, #ea580c, #dc2626);
+      color: #fff;
+    }
+
+    /* ═══════════════════════════════════════════════════════
+       HERO SECTION
+       ═══════════════════════════════════════════════════════ */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      background: var(--bg-hero);
+      overflow: hidden;
+      padding-top: var(--header-height);
+    }
+    .hero-bg-shapes {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .hero-bg-shapes .shape {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.08;
+    }
+    .hero-bg-shapes .shape:nth-child(1) {
+      width: 600px; height: 600px;
+      background: var(--accent-primary);
+      top: -200px; right: -100px;
+      animation: float 8s ease-in-out infinite;
+    }
+    .hero-bg-shapes .shape:nth-child(2) {
+      width: 400px; height: 400px;
+      background: var(--accent-secondary);
+      bottom: -100px; left: -100px;
+      animation: float 6s ease-in-out infinite 1s;
+    }
+    .hero-bg-shapes .shape:nth-child(3) {
+      width: 200px; height: 200px;
+      background: var(--accent-csc);
+      top: 40%; left: 60%;
+      animation: float 10s ease-in-out infinite 2s;
+    }
+    /* Grid overlay */
+    .hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 60px 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-text { color: #fff; }
+    .hero-badges {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .hero-badge {
+      padding: 5px 14px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(8px);
+      color: #fff;
+      letter-spacing: 0.5px;
+    }
+    .hero-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 8px;
+    }
+    .hero-title .gradient-text {
+      background: linear-gradient(135deg, #60a5fa, #a78bfa, #f472b6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-subtitle {
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      color: var(--accent-secondary-light);
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .hero-desc {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.7;
+      margin-bottom: 30px;
+      max-width: 500px;
+    }
+    .hero-cta-group {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      border-radius: var(--radius-full);
+      transition: all var(--transition-fast);
+      white-space: nowrap;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary {
+      background: var(--accent-gradient);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(37,99,235,0.3);
+    }
+    .btn-primary:hover { box-shadow: 0 6px 30px rgba(37,99,235,0.45); }
+    .btn-whatsapp {
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.3);
+    }
+    .btn-whatsapp:hover { box-shadow: 0 6px 30px rgba(37,211,102,0.45); }
+    .btn-outline {
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      border: 1.5px solid rgba(255,255,255,0.25);
+      backdrop-filter: blur(8px);
+    }
+    .btn-outline:hover { background: rgba(255,255,255,0.2); border-color: rgba(255,255,255,0.4); }
+    .btn-call {
+      background: linear-gradient(135deg, #ef4444, #dc2626);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(239,68,68,0.3);
+    }
+    .btn-call:hover { box-shadow: 0 6px 30px rgba(239,68,68,0.45); }
+
+    /* Hero Quick Services */
+    .hero-quick-services {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .quick-chip {
+      padding: 6px 14px;
+      font-size: 0.72rem;
+      font-weight: 500;
+      border-radius: var(--radius-full);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.7);
+      transition: all var(--transition-fast);
+    }
+    .quick-chip:hover {
+      background: rgba(255,255,255,0.12);
+      color: #fff;
+      border-color: rgba(255,255,255,0.25);
+    }
+
+    /* Hero Visual */
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero-logo-wrapper {
+      position: relative;
+      width: 320px;
+      height: 320px;
+    }
+    .hero-logo-ring {
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,0.1);
+      animation: spin 20s linear infinite;
+    }
+    .hero-logo-ring::before {
+      content: '';
+      position: absolute;
+      width: 12px; height: 12px;
+      background: var(--accent-primary);
+      border-radius: 50%;
+      top: 0; left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0 0 20px var(--accent-primary);
+    }
+    .hero-logo-ring-2 {
+      position: absolute;
+      inset: 20px;
+      border-radius: 50%;
+      border: 1px dashed rgba(255,255,255,0.08);
+      animation: spin 15s linear infinite reverse;
+    }
+    .hero-logo-img {
+      position: absolute;
+      inset: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid rgba(255,255,255,0.15);
+      box-shadow: 0 0 60px rgba(37,99,235,0.15);
+    }
+    .hero-logo-img img {
+      width: 75%;
+      height: 75%;
+      object-fit: contain;
+    }
+
+    /* ═══════════════════════════════════════════════════════
+       SECTION TITLES
+       ═══════════════════════════════════════════════════════ */
+    .section-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 16px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--accent-primary);
+      background: rgba(37, 99, 235, 0.08);
+      border-radius: var(--radius-full);
+      margin-bottom: 14px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+    .section-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* ═══════════════════════════════════════════════════════
+       SERVICES SECTION
+       ═══════════════════════════════════════════════════════ */
+    #services { background: var(--bg-primary); }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .service-card {
+      position: relative;
+      background: var(--bg-glass);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 24px 16px;
+      text-align: center;
+      transition: all var(--transition-normal);
+      overflow: hidden;
+      cursor: default;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--accent-gradient);
+      opacity: 0;
+      transition: opacity var(--transition-normal);
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--accent-primary);
+    }
+    .service-card:hover::before { opacity: 1; }
+    .service-icon {
+      width: 48px; height: 48px;
+      margin: 0 auto 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem;
+      background: rgba(37, 99, 235, 0.08);
+      border-radius: var(--radius-md);
+      transition: all var(--transition-normal);
+    }
+    .service-card:hover .service-icon {
+      background: var(--accent-gradient);
+      transform: scale(1.1);
+    }
+    .service-card:hover .service-icon span { filter: brightness(0) invert(1); }
+    .service-card h3 {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+      line-height: 1.3;
+    }
+    .service-card p {
+      font-size: 0.68rem;
+      color: var(--text-tertiary);
+      font-weight: 400;
+    }
+
+    /* ═══════════════════════════════════════════════════════
+       DOCUMENTS SECTION
+       ═══════════════════════════════════════════════════════ */
+    #documents {
+      background: var(--bg-tertiary);
+    }
+
+    .doc-search-wrapper {
+      max-width: 500px;
+      margin: 0 auto 40px;
+      position: relative;
+    }
+    .doc-search-wrapper input {
+      width: 100%;
+      padding: 14px 20px 14px 48px;
+      font-size: 0.9rem;
+      font-family: var(--font-body);
+      border: 2px solid var(--border-color);
+      border-radius: var(--radius-full);
+      background: var(--bg-secondary);
+      color: var(--text-primary);
+      transition: all var(--transition-fast);
+      outline: none;
+    }
+    .doc-search-wrapper input:focus {
+      border-color: var(--accent-primary);
+      box-shadow: 0 0 0 4px rgba(37,99,235,0.1);
+    }
+    .doc-search-wrapper .search-icon {
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.1rem;
+      color: var(--text-tertiary);
+    }
+
+    .doc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 16px;
+    }
+
+    .doc-accordion {
+      background: var(--bg-glass-strong);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: all var(--transition-normal);
+    }
+    .doc-accordion:hover {
+      box-shadow: var(--shadow-md);
+    }
+    .doc-accordion.hidden { display: none; }
+
+    .doc-accordion-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 20px;
+      cursor: pointer;
+      transition: background var(--transition-fast);
+      user-select: none;
+    }
+    .doc-accordion-header:hover {
+      background: rgba(37,99,235,0.04);
+    }
+    .doc-accordion-header .doc-icon {
+      width: 38px; height: 38px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem;
+      background: var(--accent-gradient);
+      color: #fff;
+      border-radius: var(--radius-sm);
+      flex-shrink: 0;
+    }
+    .doc-accordion-header h3 {
+      flex: 1;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      line-height: 1.3;
+    }
+    .doc-accordion-header .doc-en {
+      font-size: 0.68rem;
+      color: var(--text-tertiary);
+      display: block;
+      font-weight: 400;
+    }
+    .doc-accordion-header .chevron {
+      font-size: 1rem;
+      color: var(--text-tertiary);
+      transition: transform var(--transition-fast);
+      flex-shrink: 0;
+    }
+    .doc-accordion.open .doc-accordion-header .chevron {
+      transform: rotate(180deg);
+    }
+
+    .doc-accordion-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+    .doc-accordion.open .doc-accordion-body {
+      max-height: 600px;
+    }
+    .doc-accordion-body ul {
+      padding: 0 20px 16px 20px;
+    }
+    .doc-accordion-body li {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      padding: 7px 0 7px 22px;
+      border-bottom: 1px dashed var(--border-color);
+      position: relative;
+      line-height: 1.5;
+    }
+    .doc-accordion-body li:last-child { border-bottom: none; }
+    .doc-accordion-body li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--accent-csc);
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+
+    /* ═══════════════════════════════════════════════════════
+       ABOUT SECTION
+       ═══════════════════════════════════════════════════════ */
+    #about { background: var(--bg-primary); }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 50px;
+      align-items: center;
+    }
+    .about-photo-wrapper {
+      position: relative;
+    }
+    .about-photo {
+      width: 100%;
+      max-width: 350px;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-xl);
+      border: 3px solid var(--border-color);
+      position: relative;
+    }
+    .about-photo img {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      object-position: top;
+    }
+    .about-photo-badge {
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 8px 20px;
+      background: var(--accent-gradient);
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 600;
+      border-radius: var(--radius-full);
+      white-space: nowrap;
+      box-shadow: var(--shadow-md);
+    }
+    .about-content h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+    .about-content .about-role {
+      font-size: 0.88rem;
+      color: var(--accent-primary);
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .about-content p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    .about-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 24px;
+    }
+    .about-feature {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 14px;
+      background: var(--bg-glass);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      transition: all var(--transition-fast);
+    }
+    .about-feature:hover { transform: translateX(4px); border-color: var(--accent-primary); }
+    .about-feature .feat-icon {
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .about-feature span {
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    /* ═══════════════════════════════════════════════════════
+       STATS SECTION
+       ═══════════════════════════════════════════════════════ */
+    #stats {
+      background: var(--bg-hero);
+      position: relative;
+      overflow: hidden;
+    }
+    .stats-bg {
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle at 20% 50%, rgba(37,99,235,0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(245,158,11,0.1) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      position: relative;
+      z-index: 2;
+    }
+    .stat-card {
+      text-align: center;
+      padding: 32px 16px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius-lg);
+      transition: all var(--transition-normal);
+    }
+    .stat-card:hover {
+      background: rgba(255,255,255,0.1);
+      transform: translateY(-4px);
+    }
+    .stat-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+    .stat-number {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .stat-label {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.65);
+      font-weight: 500;
+    }
+
+    /* ═══════════════════════════════════════════════════════
+       CONTACT SECTION
+       ═══════════════════════════════════════════════════════ */
+    #contact { background: var(--bg-tertiary); }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    .contact-info-cards {
+      display: grid;
+      gap: 16px;
+    }
+    .contact-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 20px;
+      background: var(--bg-glass-strong);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      transition: all var(--transition-normal);
+    }
+    .contact-card:hover {
+      transform: translateX(6px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--accent-primary);
+    }
+    .contact-card-icon {
+      width: 48px; height: 48px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem;
+      border-radius: var(--radius-md);
+      flex-shrink: 0;
+    }
+    .contact-card-icon.phone { background: linear-gradient(135deg, #2563eb, #1d4ed8); color: #fff; }
+    .contact-card-icon.wa { background: linear-gradient(135deg, #25d366, #128c7e); color: #fff; }
+    .contact-card-icon.email { background: linear-gradient(135deg, #f59e0b, #d97706); color: #fff; }
+    .contact-card-icon.loc { background: linear-gradient(135deg, #ef4444, #dc2626); color: #fff; }
+    .contact-card-text h4 {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .contact-card-text p {
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    .contact-card-text a {
+      color: var(--accent-primary);
+      font-weight: 500;
+    }
+    .contact-card-text a:hover { text-decoration: underline; }
+
+    .contact-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    .btn-contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 20px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      border-radius: var(--radius-full);
+      color: #fff;
+      transition: all var(--transition-fast);
+    }
+    .btn-contact:hover { transform: translateY(-2px); }
+    .btn-contact.call-btn {
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      box-shadow: 0 4px 15px rgba(37,99,235,0.3);
+    }
+    .btn-contact.wa-btn {
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      box-shadow: 0 4px 15px rgba(37,211,102,0.3);
+    }
+    .btn-contact.dir-btn {
+      background: linear-gradient(135deg, #ef4444, #dc2626);
+      box-shadow: 0 4px 15px rgba(239,68,68,0.3);
+    }
+
+    .contact-map {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 2px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+      height: 100%;
+      min-height: 380px;
+    }
+    .contact-map iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      min-height: 380px;
+    }
+
+    /* ═══════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════ */
+    #main-footer {
+      background: #0a1628;
+      color: rgba(255,255,255,0.7);
+      padding: 60px 0 0;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .footer-brand .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .footer-brand .footer-logo img {
+      width: 40px; height: 40px;
+      border-radius: var(--radius-sm);
+    }
+    .footer-brand .footer-logo span {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .footer-brand p {
+      font-size: 0.82rem;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    .footer-social {
+      display: flex;
+      gap: 10px;
+    }
+    .footer-social a {
+      width: 36px; height: 36px;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: var(--radius-sm);
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      font-size: 1rem;
+      transition: all var(--transition-fast);
+    }
+    .footer-social a:hover {
+      background: var(--accent-primary);
+      border-color: var(--accent-primary);
+      transform: translateY(-2px);
+    }
+    .footer-col h4 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+    .footer-col a, .footer-col p {
+      display: block;
+      font-size: 0.8rem;
+      padding: 4px 0;
+      color: rgba(255,255,255,0.6);
+      transition: color var(--transition-fast);
+    }
+    .footer-col a:hover { color: var(--accent-primary-light); }
+
+    .footer-bottom {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.4);
+    }
+
+    /* ═══════════════════════════════════════════════════════
+       FLOATING BUTTONS
+       ═══════════════════════════════════════════════════════ */
+    .floating-btns {
+      position: fixed;
+      bottom: 24px;
+      z-index: 900;
+    }
+    .float-whatsapp {
+      right: 24px;
+      bottom: 24px;
+      position: fixed;
+      width: 56px; height: 56px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #25d366, #128c7e);
+      color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      z-index: 900;
+      transition: all var(--transition-fast);
+      animation: pulse 2s infinite;
+    }
+    .float-whatsapp:hover { transform: scale(1.1); box-shadow: 0 6px 30px rgba(37,211,102,0.5); }
+
+    .float-call {
+      left: 24px;
+      bottom: 24px;
+      position: fixed;
+      width: 56px; height: 56px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem;
+      box-shadow: 0 4px 20px rgba(37,99,235,0.4);
+      z-index: 900;
+      transition: all var(--transition-fast);
+    }
+    .float-call:hover { transform: scale(1.1); box-shadow: 0 6px 30px rgba(37,99,235,0.5); }
+
+    .back-to-top {
+      position: fixed;
+      right: 24px;
+      bottom: 90px;
+      width: 42px; height: 42px;
+      border-radius: 50%;
+      background: var(--bg-glass-strong);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem;
+      z-index: 900;
+      opacity: 0;
+      pointer-events: none;
+      transition: all var(--transition-fast);
+    }
+    .back-to-top.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .back-to-top:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+
+    /* ═══════════════════════════════════════════════════════
+       RESPONSIVE
+       ═══════════════════════════════════════════════════════ */
+    @media (max-width: 1024px) {
+      .nav-desktop { display: none; }
+      .hamburger { display: flex; }
+      .hero-content { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+      .hero-desc { margin: 0 auto 30px; }
+      .hero-cta-group { justify-content: center; }
+      .hero-quick-services { justify-content: center; }
+      .hero-visual { order: -1; }
+      .hero-logo-wrapper { width: 220px; height: 220px; }
+      .hero-logo-img { inset: 30px; }
+      .about-grid { grid-template-columns: 1fr; text-align: center; }
+      .about-photo { margin: 0 auto; max-width: 280px; }
+      .about-features { justify-content: center; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      .section-padding { padding: 50px 0; }
+      .services-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      .service-card { padding: 16px 10px; }
+      .service-icon { width: 38px; height: 38px; font-size: 1.2rem; }
+      .service-card h3 { font-size: 0.72rem; }
+      .doc-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+      .stat-card { padding: 20px 12px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+      .about-features { grid-template-columns: 1fr; }
+      .hero-logo-wrapper { width: 180px; height: 180px; }
+      .hero-logo-img { inset: 25px; }
+      .float-whatsapp, .float-call { width: 48px; height: 48px; font-size: 1.3rem; }
+      .float-whatsapp { right: 16px; bottom: 16px; }
+      .float-call { left: 16px; bottom: 16px; }
+      .back-to-top { right: 16px; bottom: 72px; }
+      .header-brand-text h1 { font-size: 0.9rem; }
+    }
+    @media (max-width: 380px) {
+      .services-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+      .service-card { padding: 12px 8px; }
+      .hero-cta-group { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════
+       HEADER       
+       ═══════════════════════════════════════════════════════ -->
+  <header id="main-header">
+    <div class="header-container">
+      <a href="#hero" class="header-brand">
+        <img src="assets/Logo.jpeg" alt="Jumbo Online Center Logo" class="header-logo"/>
+        <div class="header-brand-text">
+          <h1><span data-mr="जम्बो ऑनलाईन सेंटर" data-en="Jumbo Online Center">जम्बो ऑनलाईन सेंटर</span></h1>
+          <div class="brand-badges">
+            <span class="badge badge-csc">CSC</span>
+            <span class="badge badge-aaple">आपले सरकार</span>
+          </div>
+        </div>
+      </a>
+
+      <nav class="nav-desktop" id="navDesktop">
+        <a href="#hero" data-mr="मुखपृष्ठ" data-en="Home">मुखपृष्ठ</a>
+        <a href="#services" data-mr="सेवा" data-en="Services">सेवा</a>
+        <a href="#documents" data-mr="कागदपत्रे" data-en="Documents">कागदपत्रे</a>
+        <a href="#about" data-mr="आमच्याबद्दल" data-en="About Us">आमच्याबद्दल</a>
+        <a href="#stats" data-mr="आकडेवारी" data-en="Statistics">आकडेवारी</a>
+        <a href="#contact" data-mr="संपर्क" data-en="Contact">संपर्क</a>
+      </nav>
+
+      <div class="header-controls">
+        <button class="lang-toggle" id="langToggle" title="Switch Language" onclick="toggleLanguage()">EN</button>
+        <button class="btn-icon" id="themeToggle" title="Toggle Theme" onclick="toggleTheme()">🌙</button>
+        <button class="hamburger" id="hamburger" onclick="toggleMobileNav()">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="nav-mobile" id="navMobile">
+      <a href="#hero" onclick="closeMobileNav()" data-mr="मुखपृष्ठ" data-en="Home">मुखपृष्ठ</a>
+      <a href="#services" onclick="closeMobileNav()" data-mr="सेवा" data-en="Services">सेवा</a>
+      <a href="#documents" onclick="closeMobileNav()" data-mr="कागदपत्रे" data-en="Documents">कागदपत्रे</a>
+      <a href="#about" onclick="closeMobileNav()" data-mr="आमच्याबद्दल" data-en="About Us">आमच्याबद्दल</a>
+      <a href="#stats" onclick="closeMobileNav()" data-mr="आकडेवारी" data-en="Statistics">आकडेवारी</a>
+      <a href="#contact" onclick="closeMobileNav()" data-mr="संपर्क" data-en="Contact">संपर्क</a>
+    </nav>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════
+       HERO
+       ═══════════════════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badges">
+          <span class="hero-badge">🏛️ CSC Certified</span>
+          <span class="hero-badge">📋 Aaple Sarkar</span>
+          <span class="hero-badge">🖥️ Digital India</span>
+        </div>
+        <h2 class="hero-title">
+          <span data-mr="जम्बो ऑनलाईन सेंटर" data-en="Jumbo Online Center">जम्बो ऑनलाईन सेंटर</span><br/>
+          <span class="gradient-text" data-mr="आपल्या सर्व डिजिटल सेवा एकाच ठिकाणी" data-en="All Your Digital Services, One Place">आपल्या सर्व डिजिटल सेवा एकाच ठिकाणी</span>
+        </h2>
+        <p class="hero-subtitle" data-mr="CSC | आपले सरकार | डिजिटल सेवा केंद्र, अहमदपूर" data-en="CSC | Aaple Sarkar | Digital Service Center, Ahmedpur">CSC | आपले सरकार | डिजिटल सेवा केंद्र, अहमदपूर</p>
+        <p class="hero-desc" data-mr="जात प्रमाणपत्र, उत्पन्न प्रमाणपत्र, पॅन कार्ड, आधार, शिष्यवृत्ती, शेतकरी योजना आणि सर्व शासकीय सेवा आपल्या दारात. विश्वासार्ह, जलद आणि परवडणाऱ्या किमतीत." data-en="Caste Certificate, Income Certificate, PAN Card, Aadhaar, Scholarships, Farmer Schemes and all Government Services at your doorstep. Reliable, fast and affordable.">जात प्रमाणपत्र, उत्पन्न प्रमाणपत्र, पॅन कार्ड, आधार, शिष्यवृत्ती, शेतकरी योजना आणि सर्व शासकीय सेवा आपल्या दारात. विश्वासार्ह, जलद आणि परवडणाऱ्या किमतीत.</p>
+
+        <div class="hero-cta-group">
+          <a href="tel:8830032975" class="btn btn-call" id="hero-call-btn">📞 <span data-mr="आत्ता कॉल करा" data-en="Call Now">आत्ता कॉल करा</span></a>
+          <a href="https://wa.me/918830032975" target="_blank" class="btn btn-whatsapp" id="hero-wa-btn">💬 WhatsApp</a>
+          <a href="https://chat.whatsapp.com/LWkaD0TQrsLFf8wm8tq0xk?s=qt&p=a&mlu=0" target="_blank" class="btn btn-outline" id="hero-group-btn">👥 <span data-mr="ग्रुप जॉईन करा" data-en="Join Group">ग्रुप जॉईन करा</span></a>
+        </div>
+
+        <div class="hero-quick-services">
+          <span class="quick-chip" data-mr="📄 जात प्रमाणपत्र" data-en="📄 Caste Certificate">📄 जात प्रमाणपत्र</span>
+          <span class="quick-chip" data-mr="💳 पॅन कार्ड" data-en="💳 PAN Card">💳 पॅन कार्ड</span>
+          <span class="quick-chip" data-mr="🎓 शिष्यवृत्ती" data-en="🎓 Scholarship">🎓 शिष्यवृत्ती</span>
+          <span class="quick-chip" data-mr="🌾 शेतकरी योजना" data-en="🌾 Farmer Schemes">🌾 शेतकरी योजना</span>
+          <span class="quick-chip" data-mr="🏪 शॉप अॅक्ट" data-en="🏪 Shop Act">🏪 शॉप अॅक्ट</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-logo-wrapper">
+          <div class="hero-logo-ring"></div>
+          <div class="hero-logo-ring-2"></div>
+          <div class="hero-logo-img">
+            <img src="assets/Logo.jpeg" alt="Jumbo Online Center"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SERVICES
+       ═══════════════════════════════════════════════════════ -->
+  <section id="services" class="section-padding">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">💼 <span data-mr="आमच्या सेवा" data-en="Our Services">आमच्या सेवा</span></span>
+        <h2 class="section-title" data-mr="सर्व डिजिटल सेवा एकाच छताखाली" data-en="All Digital Services Under One Roof">सर्व डिजिटल सेवा एकाच छताखाली</h2>
+        <p class="section-subtitle" data-mr="CSC, आपले सरकार आणि सर्व शासकीय सेवांसाठी आमच्याशी संपर्क करा" data-en="Contact us for CSC, Aaple Sarkar and all Government Services">CSC, आपले सरकार आणि सर्व शासकीय सेवांसाठी आमच्याशी संपर्क करा</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>🏛️</span></div><h3 data-mr="CSC सेवा" data-en="CSC Services">CSC सेवा</h3><p>Common Service Center</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>📋</span></div><h3 data-mr="आपले सरकार सेवा" data-en="Aaple Sarkar Services">आपले सरकार सेवा</h3><p>Aaple Sarkar</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>🆔</span></div><h3 data-mr="आधार सेवा" data-en="Aadhaar Services">आधार सेवा</h3><p>Aadhaar Related</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>💳</span></div><h3 data-mr="पॅन कार्ड (नवीन)" data-en="PAN Card (New)">पॅन कार्ड (नवीन)</h3><p>PAN Card New</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>✏️</span></div><h3 data-mr="पॅन कार्ड (दुरुस्ती)" data-en="PAN Card Correction">पॅन कार्ड (दुरुस्ती)</h3><p>PAN Correction</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>🎓</span></div><h3 data-mr="MahaDBT शिष्यवृत्ती" data-en="MahaDBT Scholarship">MahaDBT शिष्यवृत्ती</h3><p>Scholarship</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>📊</span></div><h3 data-mr="EWS प्रमाणपत्र" data-en="EWS Certificate">EWS प्रमाणपत्र</h3><p>EWS Certificate</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>💰</span></div><h3 data-mr="उत्पन्न प्रमाणपत्र" data-en="Income Certificate">उत्पन्न प्रमाणपत्र</h3><p>Income Certificate</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>🏠</span></div><h3 data-mr="रहिवासी प्रमाणपत्र" data-en="Domicile Certificate">रहिवासी प्रमाणपत्र</h3><p>Domicile Certificate</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>📜</span></div><h3 data-mr="जात प्रमाणपत्र" data-en="Caste Certificate">जात प्रमाणपत्र</h3><p>Caste Certificate</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>🏛️</span></div><h3 data-mr="केंद्रीय जात प्रमाणपत्र" data-en="Central Caste Certificate">केंद्रीय जात प्रमाणपत्र</h3><p>Central Caste Cert.</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>📑</span></div><h3 data-mr="नॉन क्रिमीलेयर" data-en="Non Creamy Layer">नॉन क्रिमीलेयर</h3><p>Non Creamy Layer</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>🌍</span></div><h3 data-mr="Age Nationality Domicile" data-en="Age Nationality Domicile">Age Nationality Domicile</h3><p>AND Certificate</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>🏪</span></div><h3 data-mr="शॉप अॅक्ट" data-en="Shop Act">शॉप अॅक्ट</h3><p>Shop Act License</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>🍽️</span></div><h3 data-mr="अन्न परवाना" data-en="Food Licence">अन्न परवाना</h3><p>Food Licence</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>🏭</span></div><h3 data-mr="उद्यम नोंदणी" data-en="Udyam Registration">उद्यम नोंदणी</h3><p>Udyam Registration</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>💼</span></div><h3 data-mr="PF सेवा" data-en="PF Services">PF सेवा</h3><p>PF Services</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>🔓</span></div><h3 data-mr="UAN Activation" data-en="UAN Activation">UAN Activation</h3><p>UAN Activation</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>📝</span></div><h3 data-mr="E-Nomination" data-en="E-Nomination">E-Nomination</h3><p>E-Nomination</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>🔍</span></div><h3 data-mr="चरित्र पडताळणी" data-en="Police Clearance">चरित्र पडताळणी</h3><p>Police Clearance</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>♿</span></div><h3 data-mr="अपंग प्रमाणपत्र" data-en="Disability Certificate">अपंग प्रमाणपत्र</h3><p>Disability Cert.</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>🗳️</span></div><h3 data-mr="मतदान कार्ड नोंदणी" data-en="Election Card Registration">मतदान कार्ड नोंदणी</h3><p>Voter Registration</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>🌾</span></div><h3 data-mr="शेतकरी योजना" data-en="Farmer Schemes">शेतकरी योजना</h3><p>Farmer Schemes</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>📰</span></div><h3 data-mr="राजपत्र सेवा" data-en="Gazette Services">राजपत्र सेवा</h3><p>Gazette Services</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>❤️</span></div><h3 data-mr="जीवन प्रमाणपत्र" data-en="Life Certificate">जीवन प्रमाणपत्र</h3><p>Life Certificate</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>📄</span></div><h3 data-mr="झेरॉक्स (होलसेल)" data-en="Xerox Wholesale">झेरॉक्स (होलसेल)</h3><p>Xerox Wholesale</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>📎</span></div><h3 data-mr="स्पायरल बाइंडिंग" data-en="Spiral Binding">स्पायरल बाइंडिंग</h3><p>Spiral Binding</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>📝</span></div><h3 data-mr="ऑनलाईन फॉर्म भरणे" data-en="Online Form Filling">ऑनलाईन फॉर्म भरणे</h3><p>Online Form Filling</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>🖨️</span></div><h3 data-mr="प्रिंटिंग सेवा" data-en="Printing Services">प्रिंटिंग सेवा</h3><p>Printing Services</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>✨</span></div><h3 data-mr="लॅमिनेशन सेवा" data-en="Lamination Services">लॅमिनेशन सेवा</h3><p>Lamination</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>🏢</span></div><h3 data-mr="शासकीय योजना अर्ज" data-en="Govt Scheme Applications">शासकीय योजना अर्ज</h3><p>Govt. Schemes</p></div>
+        <div class="service-card animate-on-scroll"><div class="service-icon"><span>🌐</span></div><h3 data-mr="सर्व डिजिटल सेवा" data-en="All Digital Services">सर्व डिजिटल सेवा</h3><p>All Digital Services</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       DOCUMENTS SECTION
+       ═══════════════════════════════════════════════════════ -->
+  <section id="documents" class="section-padding">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">📋 <span data-mr="आवश्यक कागदपत्रे" data-en="Required Documents">आवश्यक कागदपत्रे</span></span>
+        <h2 class="section-title" data-mr="कागदपत्रे यादी" data-en="Document Requirements">कागदपत्रे यादी</h2>
+        <p class="section-subtitle" data-mr="प्रत्येक सेवेसाठी आवश्यक कागदपत्रांची संपूर्ण माहिती" data-en="Complete list of required documents for each service">प्रत्येक सेवेसाठी आवश्यक कागदपत्रांची संपूर्ण माहिती</p>
+      </div>
+
+      <div class="doc-search-wrapper animate-on-scroll">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="docSearch" placeholder="शोधा... (Search documents)" oninput="filterDocs(this.value)" data-mr-placeholder="शोधा... (Search documents)" data-en-placeholder="Search documents..."/>
+      </div>
+
+      <div class="doc-grid" id="docGrid">
+
+        <!-- 1. जात प्रमाणपत्र -->
+        <div class="doc-accordion animate-on-scroll" data-search="जात प्रमाणपत्र caste certificate">
+          <div class="doc-accordion-header" onclick="toggleAccordion(this)">
+            <div class="doc-icon">📜</div>
+            <h3><span data-mr="जात प्रमाणपत्र" data-en="Caste Certificate">जात प्रमाणपत्र</span><span class="doc-en">Caste Certificate</span></h3>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="doc-accordion-body">
+            <ul>
+              <li>टी.सी./निर्गम उतारा/बोनाफाईड (विद्यार्थ्याचे)</li>
+              <li>आधार कार्ड (विद्यार्थ्याचे)</li>
+              <li>आधार कार्ड (वडिलांचे)</li>
+              <li>मतदान कार्ड (वडिलांचे)</li>
+              <li>रेशन कार्ड / लाईट बिल</li>
+              <li>टी.सी./निर्गम उतारा (वडिलांचे)</li>
+              <li>जात प्रमाणपत्र (नातेवाईकाचे)</li>
+              <li>आधार कार्ड</li>
+              <li>टी.सी./निर्गम उतारा</li>
+              <li>फोटो (वडिलांचा)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 2. नॉन क्रिमीलेयर -->
+        <div class="doc-accordion animate-on-scroll" data-search="नॉन क्रिमीलेयर non creamy layer">
+          <div class="doc-accordion-header" onclick="toggleAccordion(this)">
+            <div class="doc-icon">📑</div>
+            <h3><span data-mr="नॉन क्रिमीलेयर" data-en="Non Creamy Layer">नॉन क्रिमीलेयर</span><span class="doc-en">Non Creamy Layer</span></h3>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="doc-accordion-body">
+            <ul>
+              <li>3 वर्षांचे उत्पन्न प्रमाणपत्र</li>
+              <li>विद्यार्थ्याचे जात प्रमाणपत्र</li>
+              <li>आधार कार्ड (विद्यार्थ्याचे)</li>
+              <li>टी.सी./निर्गम उतारा/बोनाफाईड</li>
+              <li>आधार कार्ड (वडिलांचे)</li>
+              <li>मतदान कार्ड (वडिलांचे)</li>
+              <li>रेशन कार्ड / लाईट बिल</li>
+              <li>शेती असल्यास 7/12, 8A</li>
+              <li>फोटो (वडिलांचा)</li>
+              <li>नोकरी असल्यास मागील 3 वर्षांचे पगारपत्रक किंवा फॉर्म नं.16</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 3. केंद्रीय जात प्रमाणपत्र -->
+        <div class="doc-accordion animate-on-scroll" data-search="केंद्रीय जात प्रमाणपत्र central caste certificate">
+          <div class="doc-accordion-header" onclick="toggleAccordion(this)">
+            <div class="doc-icon">🏛️</div>
+            <h3><span data-mr="केंद्रीय जात प्रमाणपत्र" data-en="Central Caste Certificate">केंद्रीय जात प्रमाणपत्र</span><span class="doc-en">Central Caste Certificate</span></h3>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="doc-accordion-body">
+            <ul>
+              <li>3 वर्षांचे उत्पन्न प्रमाणपत्र</li>
+              <li>विद्यार्थ्याचे जात प्रमाणपत्र</li>
+              <li>आधार कार्ड (विद्यार्थ्याचे)</li>
+              <li>टी.सी./निर्गम उतारा/बोनाफाईड</li>
+              <li>आधार कार्ड (वडिलांचे)</li>
+              <li>मतदान कार्ड (वडिलांचे)</li>
+              <li>रेशन कार्ड / लाईट बिल</li>
+              <li>शेती असल्यास 7/12, 8A</li>
+              <li>फोटो (वडिलांचा)</li>
+              <li>नोकरी असल्यास मागील 3 वर्षांचे पगारपत्रक किंवा फॉर्म नं.16</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 4. EWS प्रमाणपत्र -->
+        <div class="doc-accordion animate-on-scroll" data-search="EWS प्रमाणपत्र ews certificate">
+          <div class="doc-accordion-header" onclick="toggleAccordion(this)">
+            <div class="doc-icon">📊</div>
+            <h3><span data-mr="EWS प्रमाणपत्र" data-en="EWS Certificate">EWS प्रमाणपत्र</span><span class="doc-en">EWS Certificate</span></h3>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="doc-accordion-body">
+            <ul>
+              <li>फोटो (विद्यार्थ्याचे)</li>
+              <li>टी.सी. (विद्यार्थ्याचे)</li>
+              <li>आधार कार्ड (विद्यार्थ्याचे)</li>
+              <li>आधार कार्ड (वडिलांचे)</li>
+              <li>मतदान कार्ड (वडिलांचे)</li>
+              <li>फोटो (वडिलांचे)</li>
+              <li>टी.सी. (वडिलांचे)</li>
+              <li>उत्पन्न प्रमाणपत्र (1 वर्षाचे)</li>
+              <li>नोकरी असल्यास मागील 1 वर्षाचे पगारपत्रक किंवा फॉर्म नं.16</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 5. उत्पन्न प्रमाणपत्र (1 वर्ष) -->
+        <div class="doc-accordion animate-on-scroll" data-search="उत्पन्न प्रमाणपत्र 1 वर्ष income certificate 1 year">
+          <div class="doc-accordion-header" onclick="toggleAccordion(this)">
+            <div class="doc-icon">💰</div>
+            <h3><span data-mr="उत्पन्न प्रमाणपत्र (1 वर्ष)" data-en="Income Certificate (1 Year)">उत्पन्न प्रमाणपत्र (1 वर्ष)</span><span class="doc-en">Income Certificate (1 Year)</span></h3>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="doc-accordion-body">
+            <ul>
+              <li>तलाठी अहवाल</li>
+              <li>आधार कार्ड (वडिलांचे)</li>
+              <li>मतदार कार्ड (वडिलांचे)</li>
+              <li>रेशन कार्ड</li>
+              <li>फोटो (वडिलांचे)</li>
+              <li>नोकरी असल्यास 1 वर्षाचे पगारपत्रक किंवा फॉर्म नं.16</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 6. उत्पन्न प्रमाणपत्र (3 वर्ष) -->
+        <div class="doc-accordion animate-on-scroll" data-search="उत्पन्न प्रमाणपत्र 3 वर्ष income certificate 3 year">
+          <div class="doc-accordion-header" onclick="toggleAccordion(this)">
+            <div class="doc-icon">💰</div>
+            <h3><span data-mr="उत्पन्न प्रमाणपत्र (3 वर्ष)" data-en="Income Certificate (3 Year)">उत्पन्न प्रमाणपत्र (3 वर्ष)</span><span class="doc-en">Income Certificate (3 Year)</span></h3>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="doc-accordion-body">
+            <ul>
+              <li>तलाठी अहवाल</li>
+              <li>आधार कार्ड (वडिलांचे)</li>
+              <li>मतदार कार्ड (वडिलांचे)</li>
+              <li>रेशन कार्ड</li>
+              <li>फोटो (वडिलांचे)</li>
+              <li>नोकरी असल्यास 3 वर्षांचे पगारपत्रक किंवा फॉर्म नं.16</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 7. रहिवासी प्रमाणपत्र -->
+        <div class="doc-accordion animate-on-scroll" data-search="रहिवासी प्रमाणपत्र domicile certificate">
+          <div class="doc-accordion-header" onclick="toggleAccordion(this)">
+            <div class="doc-icon">🏠</div>
+            <h3><span data-mr="रहिवासी प्रमाणपत्र" data-en="Domicile Certificate">रहिवासी प्रमाणपत्र</span><span class="doc-en">Domicile Certificate</span></h3>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="doc-accordion-body">
+            <ul>
+              <li>टी.सी. (विद्यार्थ्याचे)</li>
+              <li>आधार कार्ड (विद्यार्थ्याचे)</li>
+              <li>आधार कार्ड (वडिलांचे)</li>
+              <li>मतदान कार्ड (वडिलांचे)</li>
+              <li>फोटो (वडिलांचे)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 8. Age Nationality Domicile -->
+        <div class="doc-accordion animate-on-scroll" data-search="age nationality domicile certificate">
+          <div class="doc-accordion-header" onclick="toggleAccordion(this)">
+            <div class="doc-icon">🌍</div>
+            <h3><span data-mr="Age Nationality Domicile" data-en="Age Nationality Domicile">Age Nationality Domicile</span><span class="doc-en">AND Certificate</span></h3>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="doc-accordion-body">
+            <ul>
+              <li>रहिवासी प्रमाणपत्र (तहसीलचे)</li>
+              <li>टी.सी. (विद्यार्थ्याचे)</li>
+              <li>आधार कार्ड (विद्यार्थ्याचे)</li>
+              <li>आधार कार्ड (वडिलांचे)</li>
+              <li>मतदान कार्ड (वडिलांचे)</li>
+              <li>फोटो (वडिलांचे)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 9. MahaDBT शिष्यवृत्ती -->
+        <div class="doc-accordion animate-on-scroll" data-search="शिष्यवृत्ती mahadbt scholarship">
+          <div class="doc-accordion-header" onclick="toggleAccordion(this)">
+            <div class="doc-icon">🎓</div>
+            <h3><span data-mr="MahaDBT शिष्यवृत्ती" data-en="MahaDBT Scholarship">MahaDBT शिष्यवृत्ती</span><span class="doc-en">Scholarship</span></h3>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="doc-accordion-body">
+            <ul>
+              <li>आधार कार्ड</li>
+              <li>बँक पासबुक</li>
+              <li>रेशन कार्ड</li>
+              <li>उत्पन्न प्रमाणपत्र</li>
+              <li>जात प्रमाणपत्र</li>
+              <li>रहिवासी प्रमाणपत्र</li>
+              <li>मागील वर्षाची गुणपत्रिका</li>
+              <li>टी.सी.</li>
+              <li>चालू वर्षाचे बोनाफाईड</li>
+              <li>प्रवेश पावती</li>
+              <li>जात वैधता प्रमाणपत्र (असल्यास)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 10. पॅन कार्ड (नवीन) -->
+        <div class="doc-accordion animate-on-scroll" data-search="पॅन कार्ड नवीन pan card new">
+          <div class="doc-accordion-header" onclick="toggleAccordion(this)">
+            <div class="doc-icon">💳</div>
+            <h3><span data-mr="पॅन कार्ड (नवीन)" data-en="PAN Card (New)">पॅन कार्ड (नवीन)</span><span class="doc-en">PAN Card New</span></h3>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="doc-accordion-body">
+            <ul>
+              <li>आधार कार्ड</li>
+              <li>2 रंगीत फोटो</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 11. पॅन कार्ड (दुरुस्ती) -->
+        <div class="doc-accordion animate-on-scroll" data-search="पॅन कार्ड दुरुस्ती pan card correction">
+          <div class="doc-accordion-header" onclick="toggleAccordion(this)">
+            <div class="doc-icon">✏️</div>
+            <h3><span data-mr="पॅन कार्ड (दुरुस्ती)" data-en="PAN Card (Correction)">पॅन कार्ड (दुरुस्ती)</span><span class="doc-en">PAN Card Correction</span></h3>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="doc-accordion-body">
+            <ul>
+              <li>जुने पॅन कार्ड</li>
+              <li>आधार कार्ड</li>
+              <li>2 रंगीत फोटो</li>
+              <li>Annexure Form</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 12. अपंग प्रमाणपत्र -->
+        <div class="doc-accordion animate-on-scroll" data-search="अपंग प्रमाणपत्र disability certificate">
+          <div class="doc-accordion-header" onclick="toggleAccordion(this)">
+            <div class="doc-icon">♿</div>
+            <h3><span data-mr="अपंग प्रमाणपत्र" data-en="Disability Certificate">अपंग प्रमाणपत्र</span><span class="doc-en">Disability Certificate</span></h3>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="doc-accordion-body">
+            <ul>
+              <li>आधार कार्ड (मूळ)</li>
+              <li>रेशन कार्ड (मूळ)</li>
+              <li>फोटो</li>
+              <li>सही</li>
+              <li>डाव्या हाताचा अंगठा</li>
+              <li>मोबाईल नंबर</li>
+              <li>ई-मेल</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 13. शॉप अॅक्ट -->
+        <div class="doc-accordion animate-on-scroll" data-search="शॉप अॅक्ट shop act">
+          <div class="doc-accordion-header" onclick="toggleAccordion(this)">
+            <div class="doc-icon">🏪</div>
+            <h3><span data-mr="शॉप अॅक्ट" data-en="Shop Act">शॉप अॅक्ट</span><span class="doc-en">Shop Act License</span></h3>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="doc-accordion-body">
+            <ul>
+              <li>दुकानाचा मराठी बोर्ड बाहेरून</li>
+              <li>आधार कार्ड</li>
+              <li>फोटो</li>
+              <li>सही</li>
+              <li>मोबाईल नंबर</li>
+              <li>ई-मेल</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 14. अन्न परवाना -->
+        <div class="doc-accordion animate-on-scroll" data-search="अन्न परवाना food licence">
+          <div class="doc-accordion-header" onclick="toggleAccordion(this)">
+            <div class="doc-icon">🍽️</div>
+            <h3><span data-mr="अन्न परवाना" data-en="Food Licence">अन्न परवाना</span><span class="doc-en">Food Licence</span></h3>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="doc-accordion-body">
+            <ul>
+              <li>आधार कार्ड</li>
+              <li>पॅन कार्ड</li>
+              <li>फोटो</li>
+              <li>सही</li>
+              <li>शॉप अॅक्ट</li>
+              <li>मोबाईल नंबर</li>
+              <li>ई-मेल</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 15. चरित्र पडताळणी -->
+        <div class="doc-accordion animate-on-scroll" data-search="चरित्र पडताळणी police clearance">
+          <div class="doc-accordion-header" onclick="toggleAccordion(this)">
+            <div class="doc-icon">🔍</div>
+            <h3><span data-mr="चरित्र पडताळणी" data-en="Police Clearance">चरित्र पडताळणी</span><span class="doc-en">Police Clearance</span></h3>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="doc-accordion-body">
+            <ul>
+              <li>आधार कार्ड</li>
+              <li>मतदान कार्ड</li>
+              <li>पॅन कार्ड</li>
+              <li>टी.सी.</li>
+              <li>रेशन कार्ड</li>
+              <li>फोटो</li>
+              <li>सही</li>
+              <li>2 रंगीत फोटो</li>
+              <li>Annexure Form</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 16. शेतकरी योजना -->
+        <div class="doc-accordion animate-on-scroll" data-search="शेतकरी योजना farmer scheme mahadbt">
+          <div class="doc-accordion-header" onclick="toggleAccordion(this)">
+            <div class="doc-icon">🌾</div>
+            <h3><span data-mr="शेतकरी योजना" data-en="Farmer Scheme">शेतकरी योजना</span><span class="doc-en">Farmer Scheme (MahaDBT)</span></h3>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="doc-accordion-body">
+            <ul>
+              <li>आधार कार्ड</li>
+              <li>बँक पासबुक</li>
+              <li>7/12</li>
+              <li>8A</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 17. PF सेवा / UAN -->
+        <div class="doc-accordion animate-on-scroll" data-search="PF सेवा UAN activation e-nomination">
+          <div class="doc-accordion-header" onclick="toggleAccordion(this)">
+            <div class="doc-icon">💼</div>
+            <h3><span data-mr="PF सेवा / UAN Activation" data-en="PF Services / UAN Activation">PF सेवा / UAN Activation</span><span class="doc-en">PF & E-Nomination</span></h3>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="doc-accordion-body">
+            <ul>
+              <li>KYC करणे</li>
+              <li>नावात बदल करणे</li>
+              <li>जन्मतारीख दुरुस्ती</li>
+              <li>पासवर्ड बदलणे</li>
+              <li style="font-weight:600;color:var(--accent-primary);border:none;padding-top:12px;">E-Nomination साठी:</li>
+              <li>आधार कार्ड (वारसाचे)</li>
+              <li>फोटो (वारसाचे)</li>
+              <li>बँक पासबुक (वारसाचे)</li>
+              <li>आधार कार्ड, बँक पासबुक व पॅन कार्डवरील नाव PF Portal वर सारखे असणे आवश्यक</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 18. उद्यम नोंदणी -->
+        <div class="doc-accordion animate-on-scroll" data-search="उद्यम नोंदणी udyam registration उद्योग आधार">
+          <div class="doc-accordion-header" onclick="toggleAccordion(this)">
+            <div class="doc-icon">🏭</div>
+            <h3><span data-mr="उद्यम नोंदणी" data-en="Udyam Registration">उद्यम नोंदणी</span><span class="doc-en">Udyam Registration</span></h3>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="doc-accordion-body">
+            <ul>
+              <li>आधार कार्ड</li>
+              <li>पॅन कार्ड</li>
+              <li>बँक पासबुक</li>
+              <li>मोबाईल नंबर</li>
+              <li>ई-मेल</li>
+              <li>व्यवसाय सुरू केलेली तारीख</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 19. मतदान कार्ड नोंदणी -->
+        <div class="doc-accordion animate-on-scroll" data-search="मतदान कार्ड नोंदणी election voter registration">
+          <div class="doc-accordion-header" onclick="toggleAccordion(this)">
+            <div class="doc-icon">🗳️</div>
+            <h3><span data-mr="मतदान कार्ड नोंदणी" data-en="Election Card Registration">मतदान कार्ड नोंदणी</span><span class="doc-en">Voter Registration</span></h3>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="doc-accordion-body">
+            <ul>
+              <li>आधार कार्ड</li>
+              <li>फोटो</li>
+              <li>लाईट बिल / रेशन कार्ड</li>
+              <li>10 वी गुणपत्रिका</li>
+              <li>मोबाईल नंबर</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 20. राजपत्र सेवा -->
+        <div class="doc-accordion animate-on-scroll" data-search="राजपत्र gazette नाव बदल जन्म तारीख">
+          <div class="doc-accordion-header" onclick="toggleAccordion(this)">
+            <div class="doc-icon">📰</div>
+            <h3><span data-mr="राजपत्र सेवा (नाव बदल / जन्म तारीख)" data-en="Gazette (Name Change / DOB)">राजपत्र सेवा (नाव बदल / जन्म तारीख)</span><span class="doc-en">Gazette Services</span></h3>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="doc-accordion-body">
+            <ul>
+              <li>आधार कार्ड</li>
+              <li>मतदान कार्ड</li>
+              <li>पॅन कार्ड</li>
+              <li>टी.सी.</li>
+              <li>रेशन कार्ड</li>
+              <li>फोटो</li>
+              <li>सही</li>
+              <li>विवाह नोंदणी प्रमाणपत्र (विवाहित महिलांसाठी)</li>
+              <li>₹900 बॉन्ड पेपरवर शपथपत्र</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 21. जीवन प्रमाणपत्र -->
+        <div class="doc-accordion animate-on-scroll" data-search="जीवन प्रमाणपत्र life certificate">
+          <div class="doc-accordion-header" onclick="toggleAccordion(this)">
+            <div class="doc-icon">❤️</div>
+            <h3><span data-mr="जीवन प्रमाणपत्र" data-en="Life Certificate">जीवन प्रमाणपत्र</span><span class="doc-en">Life Certificate</span></h3>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="doc-accordion-body">
+            <ul>
+              <li>आधार कार्ड</li>
+              <li>PPO नंबर</li>
+              <li>बँक पासबुक</li>
+              <li>मोबाईल नंबर</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 22. 30% महिला आरक्षण -->
+        <div class="doc-accordion animate-on-scroll" data-search="30% महिला आरक्षण प्रमाणपत्र women reservation">
+          <div class="doc-accordion-header" onclick="toggleAccordion(this)">
+            <div class="doc-icon">👩</div>
+            <h3><span data-mr="30% महिला आरक्षण प्रमाणपत्र" data-en="30% Women Reservation Certificate">30% महिला आरक्षण प्रमाणपत्र</span><span class="doc-en">Women Reservation</span></h3>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="doc-accordion-body">
+            <ul>
+              <li>उत्पन्न प्रमाणपत्र (3 वर्षांचे)</li>
+              <li>टी.सी. (विद्यार्थ्याचे)</li>
+              <li>आधार कार्ड (विद्यार्थ्याचे)</li>
+              <li>जात प्रमाणपत्र (विद्यार्थ्याचे)</li>
+              <li>फोटो (विद्यार्थ्याचे)</li>
+              <li>फोटो (वडिलांचे)</li>
+              <li>आधार कार्ड (वडिलांचे)</li>
+              <li>मतदान कार्ड (वडिलांचे)</li>
+              <li>रेशन कार्ड</li>
+              <li>नोकरी असल्यास मागील 3 वर्षांचे पगारपत्रक किंवा फॉर्म नं.16</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 23. अल्पभूधारक प्रमाणपत्र -->
+        <div class="doc-accordion animate-on-scroll" data-search="अल्पभूधारक प्रमाणपत्र small landholding">
+          <div class="doc-accordion-header" onclick="toggleAccordion(this)">
+            <div class="doc-icon">🌱</div>
+            <h3><span data-mr="अल्पभूधारक प्रमाणपत्र" data-en="Small Landholding Certificate">अल्पभूधारक प्रमाणपत्र</span><span class="doc-en">Small Landholding</span></h3>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="doc-accordion-body">
+            <ul>
+              <li>आधार कार्ड (वडिलांचे)</li>
+              <li>मतदार कार्ड (वडिलांचे)</li>
+              <li>फोटो (वडिलांचे)</li>
+              <li>रेशन कार्ड</li>
+              <li>7/12, 8A (स्वतःचे)</li>
+              <li>7/12, 8A (साक्षीदार)</li>
+              <li>नोकरी असल्यास मागील 3 वर्षांचे पगारपत्रक किंवा फॉर्म नं.16</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 24. नमुना SEC -->
+        <div class="doc-accordion animate-on-scroll" data-search="नमुना SEC batch">
+          <div class="doc-accordion-header" onclick="toggleAccordion(this)">
+            <div class="doc-icon">📋</div>
+            <h3><span data-mr="नमुना SEC (Batch)" data-en="SEC Form (Batch)">नमुना SEC (Batch)</span><span class="doc-en">SEC Form</span></h3>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="doc-accordion-body">
+            <ul>
+              <li>टी.सी. (विद्यार्थ्याचे)</li>
+              <li>आधार कार्ड (विद्यार्थ्याचे)</li>
+              <li>आधार कार्ड (वडिलांचे)</li>
+              <li>मतदान कार्ड (वडिलांचे)</li>
+              <li>फोटो (वडिलांचे)</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       ABOUT US
+       ═══════════════════════════════════════════════════════ -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">👤 <span data-mr="आमच्याबद्दल" data-en="About Us">आमच्याबद्दल</span></span>
+        <h2 class="section-title" data-mr="जम्बो ऑनलाईन सेंटर बद्दल" data-en="About Jumbo Online Center">जम्बो ऑनलाईन सेंटर बद्दल</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-photo-wrapper animate-on-scroll">
+          <div class="about-photo">
+            <img src="assets/owner.jpg" alt="Taleem Tamboli - Owner of Jumbo Online Center"/>
+          </div>
+          <div class="about-photo-badge" data-mr="📋 संस्थापक व मालक" data-en="📋 Founder & Owner">📋 संस्थापक व मालक</div>
+        </div>
+
+        <div class="about-content animate-on-scroll">
+          <h2 data-mr="तालीम तांबोळी" data-en="Taleem Tamboli">तालीम तांबोळी</h2>
+          <p class="about-role" data-mr="संस्थापक, जम्बो ऑनलाईन सेंटर" data-en="Founder, Jumbo Online Center">संस्थापक, जम्बो ऑनलाईन सेंटर</p>
+
+          <p data-mr="जम्बो ऑनलाईन सेंटर हे अहमदपूर मधील एक अग्रगण्य डिजिटल सेवा केंद्र आहे. आम्ही CSC (Common Service Center), आपले सरकार सेवा केंद्र आणि सर्व शासकीय तसेच खाजगी डिजिटल सेवा नागरिकांना पारदर्शक, जलद आणि विश्वासार्ह पद्धतीने पुरवतो." data-en="Jumbo Online Center is a leading digital service center in Ahmedpur. We provide CSC (Common Service Center), Aaple Sarkar services, and all government and private digital services to citizens in a transparent, fast, and reliable manner.">जम्बो ऑनलाईन सेंटर हे अहमदपूर मधील एक अग्रगण्य डिजिटल सेवा केंद्र आहे. आम्ही CSC (Common Service Center), आपले सरकार सेवा केंद्र आणि सर्व शासकीय तसेच खाजगी डिजिटल सेवा नागरिकांना पारदर्शक, जलद आणि विश्वासार्ह पद्धतीने पुरवतो.</p>
+
+          <p data-mr="🎯 ध्येय: प्रत्येक नागरिकाला शासकीय सेवा सुलभ आणि सोप्या पद्धतीने उपलब्ध करून देणे." data-en="🎯 Mission: Making government services accessible and easy for every citizen.">🎯 <strong data-mr="ध्येय:" data-en="Mission:">ध्येय:</strong> प्रत्येक नागरिकाला शासकीय सेवा सुलभ आणि सोप्या पद्धतीने उपलब्ध करून देणे.</p>
+
+          <p data-mr="🔭 दृष्टी: डिजिटल इंडिया अंतर्गत ग्रामीण भागातील नागरिकांना आधुनिक तंत्रज्ञानाचा लाभ देणे." data-en="🔭 Vision: Bringing the benefits of modern technology to rural citizens under Digital India.">🔭 <strong data-mr="दृष्टी:" data-en="Vision:">दृष्टी:</strong> डिजिटल इंडिया अंतर्गत ग्रामीण भागातील नागरिकांना आधुनिक तंत्रज्ञानाचा लाभ देणे.</p>
+
+          <div class="about-features">
+            <div class="about-feature"><span class="feat-icon">⚡</span><span data-mr="जलद सेवा" data-en="Fast Service">जलद सेवा</span></div>
+            <div class="about-feature"><span class="feat-icon">🔒</span><span data-mr="विश्वासार्ह" data-en="Trustworthy">विश्वासार्ह</span></div>
+            <div class="about-feature"><span class="feat-icon">💰</span><span data-mr="परवडणारी किंमत" data-en="Affordable Prices">परवडणारी किंमत</span></div>
+            <div class="about-feature"><span class="feat-icon">🏛️</span><span data-mr="CSC प्रमाणित" data-en="CSC Certified">CSC प्रमाणित</span></div>
+            <div class="about-feature"><span class="feat-icon">📋</span><span data-mr="आपले सरकार" data-en="Aaple Sarkar">आपले सरकार</span></div>
+            <div class="about-feature"><span class="feat-icon">🕐</span><span data-mr="वेळेवर सेवा" data-en="On-time Service">वेळेवर सेवा</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       STATISTICS
+       ═══════════════════════════════════════════════════════ -->
+  <section id="stats" class="section-padding">
+    <div class="stats-bg"></div>
+    <div class="container">
+      <div class="section-header animate-on-scroll" style="color:#fff;">
+        <span class="section-tag" style="background:rgba(255,255,255,0.1);color:#fff;">📊 <span data-mr="आकडेवारी" data-en="Statistics">आकडेवारी</span></span>
+        <h2 class="section-title" style="color:#fff;" data-mr="आमची कामगिरी" data-en="Our Achievements">आमची कामगिरी</h2>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card animate-on-scroll">
+          <div class="stat-icon">😊</div>
+          <div class="stat-number" data-target="5000">0</div>
+          <div class="stat-label" data-mr="समाधानी ग्राहक" data-en="Happy Customers">समाधानी ग्राहक</div>
+        </div>
+        <div class="stat-card animate-on-scroll">
+          <div class="stat-icon">📄</div>
+          <div class="stat-number" data-target="10000">0</div>
+          <div class="stat-label" data-mr="प्रमाणपत्रे तयार" data-en="Certificates Processed">प्रमाणपत्रे तयार</div>
+        </div>
+        <div class="stat-card animate-on-scroll">
+          <div class="stat-icon">🏛️</div>
+          <div class="stat-number" data-target="8000">0</div>
+          <div class="stat-label" data-mr="शासकीय सेवा पूर्ण" data-en="Govt Services Completed">शासकीय सेवा पूर्ण</div>
+        </div>
+        <div class="stat-card animate-on-scroll">
+          <div class="stat-icon">⭐</div>
+          <div class="stat-number" data-target="5">0</div>
+          <div class="stat-label" data-mr="वर्षांचा अनुभव" data-en="Years of Experience">वर्षांचा अनुभव</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       CONTACT
+       ═══════════════════════════════════════════════════════ -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">📞 <span data-mr="संपर्क" data-en="Contact">संपर्क</span></span>
+        <h2 class="section-title" data-mr="आमच्याशी संपर्क साधा" data-en="Get in Touch">आमच्याशी संपर्क साधा</h2>
+        <p class="section-subtitle" data-mr="कोणत्याही सेवेसाठी आम्हाला कॉल करा किंवा WhatsApp करा" data-en="Call us or WhatsApp us for any service">कोणत्याही सेवेसाठी आम्हाला कॉल करा किंवा WhatsApp करा</p>
+      </div>
+
+      <div class="contact-grid">
+        <div>
+          <div class="contact-info-cards">
+            <div class="contact-card animate-on-scroll">
+              <div class="contact-card-icon phone">📞</div>
+              <div class="contact-card-text">
+                <h4 data-mr="फोन नंबर" data-en="Phone Numbers">फोन नंबर</h4>
+                <p><a href="tel:8830032975">8830032975</a> (Primary)<br/><a href="tel:8554823258">8554823258</a> (Secondary)</p>
+              </div>
+            </div>
+            <div class="contact-card animate-on-scroll">
+              <div class="contact-card-icon wa">💬</div>
+              <div class="contact-card-text">
+                <h4>WhatsApp</h4>
+                <p><a href="https://wa.me/918830032975" target="_blank">8830032975</a></p>
+              </div>
+            </div>
+            <div class="contact-card animate-on-scroll">
+              <div class="contact-card-icon email">📧</div>
+              <div class="contact-card-text">
+                <h4 data-mr="ई-मेल" data-en="Email">ई-मेल</h4>
+                <p><a href="mailto:jamboonline2021@gmail.com">jamboonline2021@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="contact-card animate-on-scroll">
+              <div class="contact-card-icon loc">📍</div>
+              <div class="contact-card-text">
+                <h4 data-mr="पत्ता" data-en="Address">पत्ता</h4>
+                <p data-mr="महात्मा फुले कॉलेज जवळ सैद, न्यू विद्या नगर, अहमदपूर, महाराष्ट्र – 413515" data-en="Mahatma Phule College Near Said, New Vidhya Nagar, Ahmedpur, Maharashtra – 413515">महात्मा फुले कॉलेज जवळ सैद, न्यू विद्या नगर, अहमदपूर, महाराष्ट्र – 413515</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-actions">
+            <a href="tel:8830032975" class="btn-contact call-btn" id="contact-call-btn">📞 <span data-mr="कॉल करा" data-en="Call Now">कॉल करा</span></a>
+            <a href="https://wa.me/918830032975" target="_blank" class="btn-contact wa-btn" id="contact-wa-btn">💬 WhatsApp</a>
+            <a href="https://www.google.com/maps?q=18.700008,76.933292" target="_blank" class="btn-contact dir-btn" id="contact-dir-btn">📍 <span data-mr="दिशा शोधा" data-en="Get Directions">दिशा शोधा</span></a>
+          </div>
+        </div>
+
+        <div class="contact-map animate-on-scroll">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000!2d76.933292!3d18.700008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDQyJzAwLjAiTiA3NsKwNTUnNTkuOSJF!5e0!3m2!1sen!2sin!4v1"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Jumbo Online Center Location - Ahmedpur"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════ -->
+  <footer id="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="assets/Logo.jpeg" alt="Jumbo Online Center"/>
+            <span data-mr="जम्बो ऑनलाईन सेंटर" data-en="Jumbo Online Center">जम्बो ऑनलाईन सेंटर</span>
+          </div>
+          <p data-mr="CSC, आपले सरकार आणि सर्व डिजिटल सेवांसाठी अहमदपूर मधील विश्वासार्ह सेवा केंद्र." data-en="Ahmedpur's trusted service center for CSC, Aaple Sarkar and all digital services.">CSC, आपले सरकार आणि सर्व डिजिटल सेवांसाठी अहमदपूर मधील विश्वासार्ह सेवा केंद्र.</p>
+          <div class="footer-social">
+            <a href="https://wa.me/918830032975" target="_blank" title="WhatsApp">💬</a>
+            <a href="tel:8830032975" title="Call">📞</a>
+            <a href="mailto:jamboonline2021@gmail.com" title="Email">📧</a>
+            <a href="https://chat.whatsapp.com/LWkaD0TQrsLFf8wm8tq0xk?s=qt&p=a&mlu=0" target="_blank" title="WhatsApp Group">👥</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-mr="झटपट लिंक्स" data-en="Quick Links">झटपट लिंक्स</h4>
+          <a href="#hero" data-mr="मुखपृष्ठ" data-en="Home">मुखपृष्ठ</a>
+          <a href="#services" data-mr="सेवा" data-en="Services">सेवा</a>
+          <a href="#documents" data-mr="कागदपत्रे" data-en="Documents">कागदपत्रे</a>
+          <a href="#about" data-mr="आमच्याबद्दल" data-en="About Us">आमच्याबद्दल</a>
+          <a href="#contact" data-mr="संपर्क" data-en="Contact">संपर्क</a>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-mr="प्रमुख सेवा" data-en="Key Services">प्रमुख सेवा</h4>
+          <a href="#documents" data-mr="जात प्रमाणपत्र" data-en="Caste Certificate">जात प्रमाणपत्र</a>
+          <a href="#documents" data-mr="उत्पन्न प्रमाणपत्र" data-en="Income Certificate">उत्पन्न प्रमाणपत्र</a>
+          <a href="#documents" data-mr="पॅन कार्ड" data-en="PAN Card">पॅन कार्ड</a>
+          <a href="#documents" data-mr="शिष्यवृत्ती" data-en="Scholarship">शिष्यवृत्ती</a>
+          <a href="#documents" data-mr="शेतकरी योजना" data-en="Farmer Schemes">शेतकरी योजना</a>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-mr="संपर्क माहिती" data-en="Contact Info">संपर्क माहिती</h4>
+          <p>📞 8830032975 / 8554823258</p>
+          <p>💬 WhatsApp: 8830032975</p>
+          <p>📧 jamboonline2021@gmail.com</p>
+          <p data-mr="📍 महात्मा फुले कॉलेज जवळ, अहमदपूर" data-en="📍 Near Mahatma Phule College, Ahmedpur">📍 महात्मा फुले कॉलेज जवळ, अहमदपूर</p>
+          <p data-mr="🕐 सोमवार – शनिवार: सकाळी ९ – संध्याकाळी ७" data-en="🕐 Mon – Sat: 9 AM – 7 PM">🕐 सोमवार – शनिवार: सकाळी ९ – संध्याकाळी ७</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 <span data-mr="जम्बो ऑनलाईन सेंटर, अहमदपूर" data-en="Jumbo Online Center, Ahmedpur">जम्बो ऑनलाईन सेंटर, अहमदपूर</span> | CSC • Aaple Sarkar • Digital Services | <span data-mr="तालीम तांबोळी" data-en="Taleem Tamboli">तालीम तांबोळी</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════════
+       FLOATING BUTTONS
+       ═══════════════════════════════════════════════════════ -->
+  <a href="https://wa.me/918830032975" target="_blank" class="float-whatsapp" title="WhatsApp" id="float-wa">💬</a>
+  <a href="tel:8830032975" class="float-call" title="Call Now" id="float-call">📞</a>
+  <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to Top">↑</button>
+
+  <!-- ═══════════════════════════════════════════════════════
+       JAVASCRIPT
+       ═══════════════════════════════════════════════════════ -->
+  <script>
+    // ─── Theme System ───────────────────────────────────────
+    function initTheme() {
+      const saved = localStorage.getItem('jumbo-theme') || 'light';
+      document.documentElement.setAttribute('data-theme', saved);
+      updateThemeIcon(saved);
+    }
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('jumbo-theme', next);
+      updateThemeIcon(next);
+    }
+    function updateThemeIcon(theme) {
+      const btn = document.getElementById('themeToggle');
+      btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+    }
+
+    // ─── Language System ────────────────────────────────────
+    let currentLang = localStorage.getItem('jumbo-lang') || 'mr';
+
+    function initLanguage() {
+      if (currentLang === 'en') applyLanguage('en');
+    }
+    function toggleLanguage() {
+      currentLang = currentLang === 'mr' ? 'en' : 'mr';
+      localStorage.setItem('jumbo-lang', currentLang);
+      applyLanguage(currentLang);
+    }
+    function applyLanguage(lang) {
+      const btn = document.getElementById('langToggle');
+      btn.textContent = lang === 'mr' ? 'EN' : 'मराठी';
+
+      // Update all elements with data-mr/data-en attributes
+      document.querySelectorAll('[data-mr][data-en]').forEach(el => {
+        el.textContent = el.getAttribute('data-' + lang);
+      });
+
+      // Update placeholders
+      document.querySelectorAll('[data-mr-placeholder][data-en-placeholder]').forEach(el => {
+        el.placeholder = el.getAttribute('data-' + lang + '-placeholder');
+      });
+
+      // Update html lang
+      document.documentElement.lang = lang === 'mr' ? 'mr' : 'en';
+    }
+
+    // ─── Mobile Nav ─────────────────────────────────────────
+    function toggleMobileNav() {
+      const nav = document.getElementById('navMobile');
+      const hamburger = document.getElementById('hamburger');
+      nav.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    }
+    function closeMobileNav() {
+      document.getElementById('navMobile').classList.remove('active');
+      document.getElementById('hamburger').classList.remove('active');
+    }
+
+    // ─── Sticky Header ─────────────────────────────────────
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('main-header');
+      const backToTop = document.getElementById('backToTop');
+
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+
+      if (window.scrollY > 400) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+
+    // ─── Accordion ──────────────────────────────────────────
+    function toggleAccordion(header) {
+      const accordion = header.parentElement;
+      const isOpen = accordion.classList.contains('open');
+
+      // Close all others (optional - remove for multi-open)
+      // document.querySelectorAll('.doc-accordion.open').forEach(a => a.classList.remove('open'));
+
+      if (isOpen) {
+        accordion.classList.remove('open');
+      } else {
+        accordion.classList.add('open');
+      }
+    }
+
+    // ─── Document Search ────────────────────────────────────
+    function filterDocs(query) {
+      const cards = document.querySelectorAll('.doc-accordion');
+      const q = query.toLowerCase().trim();
+
+      cards.forEach(card => {
+        const searchText = card.getAttribute('data-search').toLowerCase();
+        const bodyText = card.textContent.toLowerCase();
+
+        if (!q || searchText.includes(q) || bodyText.includes(q)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // ─── Animated Counters ──────────────────────────────────
+    function animateCounters() {
+      const counters = document.querySelectorAll('.stat-number[data-target]');
+      counters.forEach(counter => {
+        if (counter.dataset.animated) return;
+
+        const target = parseInt(counter.dataset.target);
+        const duration = 2000;
+        const startTime = performance.now();
+
+        function updateCounter(currentTime) {
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          // Ease out quad
+          const eased = 1 - (1 - progress) * (1 - progress);
+          const current = Math.floor(eased * target);
+
+          counter.textContent = current.toLocaleString() + (target >= 100 ? '+' : '+');
+
+          if (progress < 1) {
+            requestAnimationFrame(updateCounter);
+          } else {
+            counter.textContent = target.toLocaleString() + '+';
+            counter.dataset.animated = 'true';
+          }
+        }
+        requestAnimationFrame(updateCounter);
+      });
+    }
+
+    // ─── Intersection Observer ──────────────────────────────
+    function initScrollAnimations() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+
+            // Trigger counter animation
+            if (entry.target.closest('#stats')) {
+              animateCounters();
+            }
+
+            // Optionally unobserve for performance
+            // observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      });
+
+      document.querySelectorAll('.animate-on-scroll').forEach(el => {
+        observer.observe(el);
+      });
+    }
+
+    // ─── Active Nav Highlighting ────────────────────────────
+    function initActiveNav() {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-desktop a, .nav-mobile a');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.id;
+            navLinks.forEach(link => {
+              link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+            });
+          }
+        });
+      }, { threshold: 0.3 });
+
+      sections.forEach(section => observer.observe(section));
+    }
+
+    // ─── Init ───────────────────────────────────────────────
+    document.addEventListener('DOMContentLoaded', () => {
+      initTheme();
+      initLanguage();
+      initScrollAnimations();
+      initActiveNav();
+    });
+  </script>
+</body>
+</html>

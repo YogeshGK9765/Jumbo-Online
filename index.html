@@ -23,6 +23,43 @@
     gtag('config', 'G-N7ZGG81GTR');
   </script>
 
+  <!-- Splash Screen CSS -->
+  <style>
+    #splash-overlay {
+      position: fixed; inset: 0; z-index: 99999;
+      background: linear-gradient(135deg, #0a1628 0%, #1a2d4a 40%, #0d2137 70%, #162b45 100%);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      transition: opacity 0.6s ease, visibility 0.6s ease;
+    }
+    #splash-overlay.hide { opacity: 0; visibility: hidden; pointer-events: none; }
+    #splash-overlay::before {
+      content: ''; position: absolute; inset: 0;
+      background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .sp-blob { position: absolute; border-radius: 50%; filter: blur(60px); opacity: 0.12; animation: sp-float 8s ease-in-out infinite; }
+    .sp-blob-1 { width: 500px; height: 500px; background: #2563eb; top: -150px; right: -100px; }
+    .sp-blob-2 { width: 350px; height: 350px; background: #f59e0b; bottom: -100px; left: -80px; animation-delay: 1.5s; }
+    .sp-blob-3 { width: 200px; height: 200px; background: #16a34a; top: 40%; left: 55%; animation-delay: 3s; }
+    @keyframes sp-float { 0%, 100% { transform: translateY(0) scale(1); } 50% { transform: translateY(-20px) scale(1.03); } }
+    .sp-card { position: relative; z-index: 2; text-align: center; padding: 0 20px; animation: sp-fadeup 0.8s ease forwards; }
+    @keyframes sp-fadeup { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    .sp-logo { width: 110px; height: 110px; margin: 0 auto 22px; border-radius: 24px; overflow: hidden; border: 3px solid rgba(255,255,255,0.15); box-shadow: 0 0 40px rgba(37,99,235,0.35), 0 8px 32px rgba(0,0,0,0.4); animation: sp-glow 2s ease-in-out infinite; }
+    .sp-logo img { width: 100%; height: 100%; object-fit: cover; }
+    @keyframes sp-glow { 0%, 100% { box-shadow: 0 0 30px rgba(37,99,235,0.3), 0 8px 32px rgba(0,0,0,0.4); } 50% { box-shadow: 0 0 55px rgba(37,99,235,0.55), 0 8px 32px rgba(0,0,0,0.4); } }
+    .sp-name { font-family: 'Outfit', 'Noto Sans Devanagari', sans-serif; font-size: clamp(1.6rem, 5vw, 2.6rem); font-weight: 800; color: #fff; line-height: 1.2; margin-bottom: 6px; }
+    .sp-sub { font-family: 'Outfit', 'Noto Sans Devanagari', sans-serif; font-size: clamp(0.82rem, 2.2vw, 1rem); color: #fbbf24; font-weight: 600; margin-bottom: 8px; }
+    .sp-xerox { display: inline-block; background: #fbbf24; color: #1e293b; font-family: 'Outfit', sans-serif; font-size: 0.88rem; font-weight: 700; padding: 3px 14px; border-radius: 6px; margin-bottom: 26px; }
+    .sp-badges { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 36px; }
+    .sp-badge { padding: 5px 13px; font-size: 0.7rem; font-weight: 600; border-radius: 999px; border: 1px solid rgba(255,255,255,0.18); background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.85); font-family: 'Outfit', sans-serif; }
+    .sp-progress-wrap { width: min(300px, 78vw); margin: 0 auto 12px; }
+    .sp-track { height: 4px; background: rgba(255,255,255,0.1); border-radius: 999px; overflow: hidden; }
+    .sp-bar { height: 100%; width: 0%; background: linear-gradient(90deg, #2563eb, #fbbf24); border-radius: 999px; transition: width 0.1s linear; }
+    .sp-txt { font-family: 'Outfit', sans-serif; font-size: 0.75rem; color: rgba(255,255,255,0.35); }
+    .sp-skip { position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%); font-family: 'Outfit', sans-serif; font-size: 0.72rem; color: rgba(255,255,255,0.28); cursor: pointer; border-bottom: 1px solid rgba(255,255,255,0.15); padding-bottom: 2px; z-index: 3; background: none; border-top: none; border-left: none; border-right: none; transition: color 0.2s; }
+    .sp-skip:hover { color: rgba(255,255,255,0.65); }
+  </style>
+
   <!-- Open Graph -->
   <meta property="og:title" content="जम्बो ऑनलाईन सेंटर | Jumbo Online Center"/>
   <meta property="og:description" content="अहमदपूर मधील सर्वोत्तम डिजिटल सेवा केंद्र. CSC, आपले सरकार, आधार, पॅन कार्ड आणि सर्व शासकीय सेवा."/>
@@ -525,32 +562,6 @@
       font-weight: 600;
       margin-bottom: 16px;
     }
-    /* Yellow background highlight for CSC subtitle line */
-    .hero-subtitle-highlight {
-      display: inline-block;
-      background: #fbbf24;
-      color: #1e293b !important;
-      padding: 6px 18px;
-      border-radius: var(--radius-sm);
-      font-size: clamp(0.95rem, 2.2vw, 1.2rem);
-      font-weight: 700;
-      letter-spacing: 0.3px;
-      margin-bottom: 16px;
-      -webkit-text-fill-color: #1e293b !important;
-    }
-    /* Xerox Center label below tagline */
-    .hero-xerox-label {
-      display: inline-block;
-      font-size: clamp(1.4rem, 3.5vw, 2.2rem);
-      font-weight: 700;
-      background: #fbbf24;
-      color: #1e293b !important;
-      -webkit-text-fill-color: #1e293b !important;
-      padding: 4px 16px;
-      border-radius: var(--radius-sm);
-      letter-spacing: 0.5px;
-      margin-top: 8px;
-    }
     .hero-desc {
       font-size: 0.95rem;
       color: rgba(255,255,255,0.7);
@@ -780,7 +791,7 @@
       font-weight: 400;
     }
 
-    /* ─── Service Card Colors ───────────────────────────── */
+    /* ─── Service Card Colors ─── */
     .sc-red    { background: #fff0f0 !important; border-color: #fca5a5 !important; }
     .sc-yellow { background: #fffbea !important; border-color: #fde68a !important; }
     .sc-green  { background: #f0fff4 !important; border-color: #86efac !important; }
@@ -793,7 +804,6 @@
     .sc-rose   { background: #fff1f2 !important; border-color: #fda4af !important; }
     .sc-sky    { background: #f0f9ff !important; border-color: #7dd3fc !important; }
     .sc-amber  { background: #fffbf0 !important; border-color: #fcd34d !important; }
-
     [data-theme="dark"] .sc-red    { background: rgba(239,68,68,0.12)   !important; border-color: rgba(239,68,68,0.3)   !important; }
     [data-theme="dark"] .sc-yellow { background: rgba(234,179,8,0.12)   !important; border-color: rgba(234,179,8,0.3)   !important; }
     [data-theme="dark"] .sc-green  { background: rgba(34,197,94,0.12)   !important; border-color: rgba(34,197,94,0.3)   !important; }
@@ -807,7 +817,7 @@
     [data-theme="dark"] .sc-sky    { background: rgba(14,165,233,0.12)  !important; border-color: rgba(14,165,233,0.3)  !important; }
     [data-theme="dark"] .sc-amber  { background: rgba(245,158,11,0.12)  !important; border-color: rgba(245,158,11,0.3)  !important; }
 
-    /* ─── Document Accordion Colors (slightly darker than service cards) ─── */
+    /* ─── Document Accordion Colors ─── */
     .dc-red    { background: #fde8e8 !important; border-left: 4px solid #f87171 !important; }
     .dc-yellow { background: #fef9c3 !important; border-left: 4px solid #facc15 !important; }
     .dc-green  { background: #dcfce7 !important; border-left: 4px solid #4ade80 !important; }
@@ -820,7 +830,6 @@
     .dc-rose   { background: #ffe4e6 !important; border-left: 4px solid #fb7185 !important; }
     .dc-sky    { background: #e0f2fe !important; border-left: 4px solid #38bdf8 !important; }
     .dc-amber  { background: #fef3c7 !important; border-left: 4px solid #f59e0b !important; }
-
     [data-theme="dark"] .dc-red    { background: rgba(239,68,68,0.18)   !important; border-left: 4px solid rgba(239,68,68,0.5)   !important; }
     [data-theme="dark"] .dc-yellow { background: rgba(234,179,8,0.18)   !important; border-left: 4px solid rgba(234,179,8,0.5)   !important; }
     [data-theme="dark"] .dc-green  { background: rgba(34,197,94,0.18)   !important; border-left: 4px solid rgba(34,197,94,0.5)   !important; }
@@ -833,6 +842,10 @@
     [data-theme="dark"] .dc-rose   { background: rgba(244,63,94,0.18)   !important; border-left: 4px solid rgba(244,63,94,0.5)   !important; }
     [data-theme="dark"] .dc-sky    { background: rgba(14,165,233,0.18)  !important; border-left: 4px solid rgba(14,165,233,0.5)  !important; }
     [data-theme="dark"] .dc-amber  { background: rgba(245,158,11,0.18)  !important; border-left: 4px solid rgba(245,158,11,0.5)  !important; }
+
+    /* ─── Hero Xerox Label ─── */
+    .hero-subtitle-highlight { display:inline-block; background:#fbbf24; color:#1e293b !important; padding:6px 18px; border-radius:var(--radius-sm); font-size:clamp(0.95rem,2.2vw,1.2rem); font-weight:700; margin-bottom:16px; -webkit-text-fill-color:#1e293b !important; }
+    .hero-xerox-label { display:inline-block; font-size:clamp(1.4rem,3.5vw,2.2rem); font-weight:700; background:#fbbf24; color:#1e293b !important; -webkit-text-fill-color:#1e293b !important; padding:4px 16px; border-radius:var(--radius-sm); letter-spacing:0.5px; margin-top:8px; }
 
     /* ═══════════════════════════════════════════════════════
        DOCUMENTS SECTION
@@ -1398,6 +1411,78 @@
   </style>
 </head>
 <body>
+
+  <!-- SPLASH SCREEN -->
+  <div id="splash-overlay">
+    <div class="sp-blob sp-blob-1"></div>
+    <div class="sp-blob sp-blob-2"></div>
+    <div class="sp-blob sp-blob-3"></div>
+    <div class="sp-card">
+      <div class="sp-logo"><img src="assets/Logo.jpeg" alt="Jumbo Online Center"/></div>
+      <div class="sp-name">\u091c\u092e\u094d\u092c\u094b \u0911\u0928\u0932\u093e\u0908\u0928 \u0938\u0947\u0902\u091f\u0930</div>
+      <div class="sp-sub">CSC | \u0906\u092a\u0932\u0947 \u0938\u0930\u0915\u093e\u0930 | \u0921\u093f\u091c\u093f\u091f\u0932 \u0938\u0947\u0935\u093e \u0915\u0947\u0902\u0926\u094d\u0930, \u0905\u0939\u092e\u0926\u092a\u0942\u0930</div>
+      <div class="sp-xerox">\u091d\u0947\u0930\u0949\u0915\u094d\u0938 \u0938\u0947\u0902\u091f\u0930</div>
+      <div class="sp-badges">
+        <span class="sp-badge">\ud83c\udfd7\ufe0f CSC Certified</span>
+        <span class="sp-badge">\ud83d\udccb Aaple Sarkar</span>
+        <span class="sp-badge">\ud83d\udda5\ufe0f Digital India</span>
+      </div>
+      <div class="sp-progress-wrap">
+        <div class="sp-track"><div class="sp-bar" id="spBar"></div></div>
+      </div>
+      <p class="sp-txt" id="spTxt">Loading... 3</p>
+    </div>
+    <button class="sp-skip" onclick="hideSplash()">Skip \u2192</button>
+  </div>
+
+  <script>
+    // FIXED: Use DOMContentLoaded so elements are guaranteed to exist
+    document.addEventListener('DOMContentLoaded', function() {
+      var overlay  = document.getElementById('splash-overlay');
+      var bar      = document.getElementById('spBar');
+      var txt      = document.getElementById('spTxt');
+
+      if (!overlay || !bar || !txt) return;
+
+      var DURATION  = 3000;
+      var start     = Date.now();
+      var countdown = 3;
+
+      // Countdown text every 1 second
+      var counter = setInterval(function() {
+        countdown--;
+        if (countdown > 0) {
+          txt.textContent = 'Loading... ' + countdown;
+        } else {
+          txt.textContent = 'Welcome! \ud83d\ude4f';
+          clearInterval(counter);
+        }
+      }, 1000);
+
+      // Smooth progress bar
+      var anim = setInterval(function() {
+        var pct = Math.min(((Date.now() - start) / DURATION) * 100, 100);
+        bar.style.width = pct + '%';
+        if (pct >= 100) clearInterval(anim);
+      }, 30);
+
+      // Auto-hide timer
+      var autoTimer = setTimeout(doHide, DURATION);
+
+      function doHide() {
+        clearInterval(counter);
+        clearInterval(anim);
+        clearTimeout(autoTimer);
+        overlay.classList.add('hide');
+        setTimeout(function() {
+          if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
+        }, 700);
+      }
+
+      // Expose for Skip button onclick
+      window.hideSplash = doHide;
+    });
+  </script>
 
   <!-- ═══════════════════════════════════════════════════════
        HEADER       
@@ -2163,13 +2248,13 @@
           <div class="contact-actions">
             <a href="tel:8830032975" class="btn-contact call-btn" id="contact-call-btn">📞 <span data-mr="कॉल करा" data-en="Call Now">कॉल करा</span></a>
             <a href="https://wa.me/918830032975" target="_blank" class="btn-contact wa-btn" id="contact-wa-btn">💬 WhatsApp</a>
-            <a href="https://www.google.com/maps?q=18.700008,76.933292" target="_blank" class="btn-contact dir-btn" id="contact-dir-btn">📍 <span data-mr="दिशा शोधा" data-en="Get Directions">दिशा शोधा</span></a>
+            <a href="https://www.google.com/maps?q=18.70729321321168,76.93864795549337" target="_blank" class="btn-contact dir-btn" id="contact-dir-btn">📍 <span data-mr="दिशा शोधा" data-en="Get Directions">दिशा शोधा</span></a>
           </div>
         </div>
 
         <div class="contact-map animate-on-scroll">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000!2d76.933292!3d18.700008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDQyJzAwLjAiTiA3NsKwNTUnNTkuOSJF!5e0!3m2!1sen!2sin!4v1"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000!2d76.93864795549337!3d18.70729321321168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDQyJzI2LjMiTiA3NsKwNTYnMTkuMSJF!5e0!3m2!1sen!2sin!4v1"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
             title="Jumbo Online Center Location - Ahmedpur"

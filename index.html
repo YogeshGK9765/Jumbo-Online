@@ -56,8 +56,8 @@
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 18.700008,
-      "longitude": 76.933292
+      "latitude": 18.70729321321168,
+      "longitude": 76.93864795549337
     },
     "owner": {
       "@type": "Person",
@@ -525,6 +525,32 @@
       font-weight: 600;
       margin-bottom: 16px;
     }
+    /* Yellow background highlight for CSC subtitle line */
+    .hero-subtitle-highlight {
+      display: inline-block;
+      background: #fbbf24;
+      color: #1e293b !important;
+      padding: 6px 18px;
+      border-radius: var(--radius-sm);
+      font-size: clamp(0.95rem, 2.2vw, 1.2rem);
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      margin-bottom: 16px;
+      -webkit-text-fill-color: #1e293b !important;
+    }
+    /* Xerox Center label below tagline */
+    .hero-xerox-label {
+      display: inline-block;
+      font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+      font-weight: 700;
+      background: #fbbf24;
+      color: #1e293b !important;
+      -webkit-text-fill-color: #1e293b !important;
+      padding: 4px 16px;
+      border-radius: var(--radius-sm);
+      letter-spacing: 0.5px;
+      margin-top: 8px;
+    }
     .hero-desc {
       font-size: 0.95rem;
       color: rgba(255,255,255,0.7);
@@ -780,6 +806,33 @@
     [data-theme="dark"] .sc-rose   { background: rgba(244,63,94,0.12)   !important; border-color: rgba(244,63,94,0.3)   !important; }
     [data-theme="dark"] .sc-sky    { background: rgba(14,165,233,0.12)  !important; border-color: rgba(14,165,233,0.3)  !important; }
     [data-theme="dark"] .sc-amber  { background: rgba(245,158,11,0.12)  !important; border-color: rgba(245,158,11,0.3)  !important; }
+
+    /* ─── Document Accordion Colors (slightly darker than service cards) ─── */
+    .dc-red    { background: #fde8e8 !important; border-left: 4px solid #f87171 !important; }
+    .dc-yellow { background: #fef9c3 !important; border-left: 4px solid #facc15 !important; }
+    .dc-green  { background: #dcfce7 !important; border-left: 4px solid #4ade80 !important; }
+    .dc-pink   { background: #fce7f3 !important; border-left: 4px solid #f472b6 !important; }
+    .dc-blue   { background: #dbeafe !important; border-left: 4px solid #60a5fa !important; }
+    .dc-orange { background: #ffedd5 !important; border-left: 4px solid #fb923c !important; }
+    .dc-purple { background: #ede9fe !important; border-left: 4px solid #a78bfa !important; }
+    .dc-teal   { background: #ccfbf1 !important; border-left: 4px solid #2dd4bf !important; }
+    .dc-lime   { background: #ecfccb !important; border-left: 4px solid #a3e635 !important; }
+    .dc-rose   { background: #ffe4e6 !important; border-left: 4px solid #fb7185 !important; }
+    .dc-sky    { background: #e0f2fe !important; border-left: 4px solid #38bdf8 !important; }
+    .dc-amber  { background: #fef3c7 !important; border-left: 4px solid #f59e0b !important; }
+
+    [data-theme="dark"] .dc-red    { background: rgba(239,68,68,0.18)   !important; border-left: 4px solid rgba(239,68,68,0.5)   !important; }
+    [data-theme="dark"] .dc-yellow { background: rgba(234,179,8,0.18)   !important; border-left: 4px solid rgba(234,179,8,0.5)   !important; }
+    [data-theme="dark"] .dc-green  { background: rgba(34,197,94,0.18)   !important; border-left: 4px solid rgba(34,197,94,0.5)   !important; }
+    [data-theme="dark"] .dc-pink   { background: rgba(236,72,153,0.18)  !important; border-left: 4px solid rgba(236,72,153,0.5)  !important; }
+    [data-theme="dark"] .dc-blue   { background: rgba(59,130,246,0.18)  !important; border-left: 4px solid rgba(59,130,246,0.5)  !important; }
+    [data-theme="dark"] .dc-orange { background: rgba(249,115,22,0.18)  !important; border-left: 4px solid rgba(249,115,22,0.5)  !important; }
+    [data-theme="dark"] .dc-purple { background: rgba(168,85,247,0.18)  !important; border-left: 4px solid rgba(168,85,247,0.5)  !important; }
+    [data-theme="dark"] .dc-teal   { background: rgba(20,184,166,0.18)  !important; border-left: 4px solid rgba(20,184,166,0.5)  !important; }
+    [data-theme="dark"] .dc-lime   { background: rgba(132,204,22,0.18)  !important; border-left: 4px solid rgba(132,204,22,0.5)  !important; }
+    [data-theme="dark"] .dc-rose   { background: rgba(244,63,94,0.18)   !important; border-left: 4px solid rgba(244,63,94,0.5)   !important; }
+    [data-theme="dark"] .dc-sky    { background: rgba(14,165,233,0.18)  !important; border-left: 4px solid rgba(14,165,233,0.5)  !important; }
+    [data-theme="dark"] .dc-amber  { background: rgba(245,158,11,0.18)  !important; border-left: 4px solid rgba(245,158,11,0.5)  !important; }
 
     /* ═══════════════════════════════════════════════════════
        DOCUMENTS SECTION
@@ -1409,7 +1462,8 @@
         </div>
         <h2 class="hero-title">
           <span data-mr="जम्बो ऑनलाईन सेंटर" data-en="Jumbo Online Center">जम्बो ऑनलाईन सेंटर</span><br/>
-          <span class="gradient-text" data-mr="आपल्या सर्व डिजिटल सेवा एकाच ठिकाणी" data-en="All Your Digital Services, One Place">आपल्या सर्व डिजिटल सेवा एकाच ठिकाणी</span>
+          <span class="gradient-text" data-mr="आपल्या सर्व डिजिटल सेवा एकाच ठिकाणी" data-en="All Your Digital Services, One Place">आपल्या सर्व डिजिटल सेवा एकाच ठिकाणी</span><br/>
+          <span class="hero-xerox-label" data-mr="झेरॉक्स सेंटर" data-en="Xerox Center">झेरॉक्स सेंटर</span>
         </h2>
         <p class="hero-subtitle" data-mr="CSC | आपले सरकार | डिजिटल सेवा केंद्र, अहमदपूर" data-en="CSC | Aaple Sarkar | Digital Service Center, Ahmedpur">CSC | आपले सरकार | डिजिटल सेवा केंद्र, अहमदपूर</p>
         <p class="hero-desc" data-mr="जात प्रमाणपत्र, उत्पन्न प्रमाणपत्र, पॅन कार्ड, आधार, शिष्यवृत्ती, शेतकरी योजना आणि सर्व शासकीय सेवा आपल्या दारात. विश्वासार्ह, जलद आणि परवडणाऱ्या किमतीत." data-en="Caste Certificate, Income Certificate, PAN Card, Aadhaar, Scholarships, Farmer Schemes and all Government Services at your doorstep. Reliable, fast and affordable.">जात प्रमाणपत्र, उत्पन्न प्रमाणपत्र, पॅन कार्ड, आधार, शिष्यवृत्ती, शेतकरी योजना आणि सर्व शासकीय सेवा आपल्या दारात. विश्वासार्ह, जलद आणि परवडणाऱ्या किमतीत.</p>
@@ -1507,7 +1561,7 @@
       <div class="doc-grid" id="docGrid">
 
         <!-- 1. जात प्रमाणपत्र -->
-        <div class="doc-accordion animate-on-scroll" data-search="जात प्रमाणपत्र caste certificate">
+        <div class="doc-accordion animate-on-scroll dc-blue" data-search="जात प्रमाणपत्र caste certificate">
           <div class="doc-accordion-header" onclick="toggleAccordion(this)">
             <div class="doc-icon">📜</div>
             <h3><span data-mr="जात प्रमाणपत्र" data-en="Caste Certificate">जात प्रमाणपत्र</span><span class="doc-en">Caste Certificate</span></h3>
@@ -1530,7 +1584,7 @@
         </div>
 
         <!-- 2. नॉन क्रिमीलेयर -->
-        <div class="doc-accordion animate-on-scroll" data-search="नॉन क्रिमीलेयर non creamy layer">
+        <div class="doc-accordion animate-on-scroll dc-yellow" data-search="नॉन क्रिमीलेयर non creamy layer">
           <div class="doc-accordion-header" onclick="toggleAccordion(this)">
             <div class="doc-icon">📑</div>
             <h3><span data-mr="नॉन क्रिमीलेयर" data-en="Non Creamy Layer">नॉन क्रिमीलेयर</span><span class="doc-en">Non Creamy Layer</span></h3>
@@ -1553,7 +1607,7 @@
         </div>
 
         <!-- 3. केंद्रीय जात प्रमाणपत्र -->
-        <div class="doc-accordion animate-on-scroll" data-search="केंद्रीय जात प्रमाणपत्र central caste certificate">
+        <div class="doc-accordion animate-on-scroll dc-green" data-search="केंद्रीय जात प्रमाणपत्र central caste certificate">
           <div class="doc-accordion-header" onclick="toggleAccordion(this)">
             <div class="doc-icon">🏛️</div>
             <h3><span data-mr="केंद्रीय जात प्रमाणपत्र" data-en="Central Caste Certificate">केंद्रीय जात प्रमाणपत्र</span><span class="doc-en">Central Caste Certificate</span></h3>
@@ -1576,7 +1630,7 @@
         </div>
 
         <!-- 4. EWS प्रमाणपत्र -->
-        <div class="doc-accordion animate-on-scroll" data-search="EWS प्रमाणपत्र ews certificate">
+        <div class="doc-accordion animate-on-scroll dc-pink" data-search="EWS प्रमाणपत्र ews certificate">
           <div class="doc-accordion-header" onclick="toggleAccordion(this)">
             <div class="doc-icon">📊</div>
             <h3><span data-mr="EWS प्रमाणपत्र" data-en="EWS Certificate">EWS प्रमाणपत्र</span><span class="doc-en">EWS Certificate</span></h3>
@@ -1598,7 +1652,7 @@
         </div>
 
         <!-- 5. उत्पन्न प्रमाणपत्र (1 वर्ष) -->
-        <div class="doc-accordion animate-on-scroll" data-search="उत्पन्न प्रमाणपत्र 1 वर्ष income certificate 1 year">
+        <div class="doc-accordion animate-on-scroll dc-purple" data-search="उत्पन्न प्रमाणपत्र 1 वर्ष income certificate 1 year">
           <div class="doc-accordion-header" onclick="toggleAccordion(this)">
             <div class="doc-icon">💰</div>
             <h3><span data-mr="उत्पन्न प्रमाणपत्र (1 वर्ष)" data-en="Income Certificate (1 Year)">उत्पन्न प्रमाणपत्र (1 वर्ष)</span><span class="doc-en">Income Certificate (1 Year)</span></h3>
@@ -1617,7 +1671,7 @@
         </div>
 
         <!-- 6. उत्पन्न प्रमाणपत्र (3 वर्ष) -->
-        <div class="doc-accordion animate-on-scroll" data-search="उत्पन्न प्रमाणपत्र 3 वर्ष income certificate 3 year">
+        <div class="doc-accordion animate-on-scroll dc-orange" data-search="उत्पन्न प्रमाणपत्र 3 वर्ष income certificate 3 year">
           <div class="doc-accordion-header" onclick="toggleAccordion(this)">
             <div class="doc-icon">💰</div>
             <h3><span data-mr="उत्पन्न प्रमाणपत्र (3 वर्ष)" data-en="Income Certificate (3 Year)">उत्पन्न प्रमाणपत्र (3 वर्ष)</span><span class="doc-en">Income Certificate (3 Year)</span></h3>
@@ -1636,7 +1690,7 @@
         </div>
 
         <!-- 7. रहिवासी प्रमाणपत्र -->
-        <div class="doc-accordion animate-on-scroll" data-search="रहिवासी प्रमाणपत्र domicile certificate">
+        <div class="doc-accordion animate-on-scroll dc-teal" data-search="रहिवासी प्रमाणपत्र domicile certificate">
           <div class="doc-accordion-header" onclick="toggleAccordion(this)">
             <div class="doc-icon">🏠</div>
             <h3><span data-mr="रहिवासी प्रमाणपत्र" data-en="Domicile Certificate">रहिवासी प्रमाणपत्र</span><span class="doc-en">Domicile Certificate</span></h3>
@@ -1654,7 +1708,7 @@
         </div>
 
         <!-- 8. Age Nationality Domicile -->
-        <div class="doc-accordion animate-on-scroll" data-search="age nationality domicile certificate">
+        <div class="doc-accordion animate-on-scroll dc-red" data-search="age nationality domicile certificate">
           <div class="doc-accordion-header" onclick="toggleAccordion(this)">
             <div class="doc-icon">🌍</div>
             <h3><span data-mr="Age Nationality Domicile" data-en="Age Nationality Domicile">Age Nationality Domicile</span><span class="doc-en">AND Certificate</span></h3>
@@ -1673,7 +1727,7 @@
         </div>
 
         <!-- 9. MahaDBT शिष्यवृत्ती -->
-        <div class="doc-accordion animate-on-scroll" data-search="शिष्यवृत्ती mahadbt scholarship">
+        <div class="doc-accordion animate-on-scroll dc-lime" data-search="शिष्यवृत्ती mahadbt scholarship">
           <div class="doc-accordion-header" onclick="toggleAccordion(this)">
             <div class="doc-icon">🎓</div>
             <h3><span data-mr="MahaDBT शिष्यवृत्ती" data-en="MahaDBT Scholarship">MahaDBT शिष्यवृत्ती</span><span class="doc-en">Scholarship</span></h3>
@@ -1706,7 +1760,7 @@
         </div>
 
         <!-- 10. पॅन कार्ड (नवीन) -->
-        <div class="doc-accordion animate-on-scroll" data-search="पॅन कार्ड नवीन pan card new">
+        <div class="doc-accordion animate-on-scroll dc-sky" data-search="पॅन कार्ड नवीन pan card new">
           <div class="doc-accordion-header" onclick="toggleAccordion(this)">
             <div class="doc-icon">💳</div>
             <h3><span data-mr="पॅन कार्ड (नवीन)" data-en="PAN Card (New)">पॅन कार्ड (नवीन)</span><span class="doc-en">PAN Card New</span></h3>
@@ -1741,7 +1795,7 @@
         </div>
 
         <!-- 11. पॅन कार्ड (दुरुस्ती) -->
-        <div class="doc-accordion animate-on-scroll" data-search="पॅन कार्ड दुरुस्ती pan card correction">
+        <div class="doc-accordion animate-on-scroll dc-amber" data-search="पॅन कार्ड दुरुस्ती pan card correction">
           <div class="doc-accordion-header" onclick="toggleAccordion(this)">
             <div class="doc-icon">✏️</div>
             <h3><span data-mr="पॅन कार्ड (दुरुस्ती)" data-en="PAN Card (Correction)">पॅन कार्ड (दुरुस्ती)</span><span class="doc-en">PAN Card Correction</span></h3>
@@ -1760,7 +1814,7 @@
         </div>
 
         <!-- 12. अपंग प्रमाणपत्र -->
-        <div class="doc-accordion animate-on-scroll" data-search="अपंग प्रमाणपत्र disability certificate">
+        <div class="doc-accordion animate-on-scroll dc-rose" data-search="अपंग प्रमाणपत्र disability certificate">
           <div class="doc-accordion-header" onclick="toggleAccordion(this)">
             <div class="doc-icon">♿</div>
             <h3><span data-mr="अपंग प्रमाणपत्र" data-en="Disability Certificate">अपंग प्रमाणपत्र</span><span class="doc-en">Disability Certificate</span></h3>
@@ -1780,7 +1834,7 @@
         </div>
 
         <!-- 13. शॉप अॅक्ट -->
-        <div class="doc-accordion animate-on-scroll" data-search="शॉप अॅक्ट shop act">
+        <div class="doc-accordion animate-on-scroll dc-green" data-search="शॉप अॅक्ट shop act">
           <div class="doc-accordion-header" onclick="toggleAccordion(this)">
             <div class="doc-icon">🏪</div>
             <h3><span data-mr="शॉप अॅक्ट" data-en="Shop Act">शॉप अॅक्ट</span><span class="doc-en">Shop Act License</span></h3>
@@ -1799,7 +1853,7 @@
         </div>
 
         <!-- 14. अन्न परवाना -->
-        <div class="doc-accordion animate-on-scroll" data-search="अन्न परवाना food licence">
+        <div class="doc-accordion animate-on-scroll dc-blue" data-search="अन्न परवाना food licence">
           <div class="doc-accordion-header" onclick="toggleAccordion(this)">
             <div class="doc-icon">🍽️</div>
             <h3><span data-mr="अन्न परवाना" data-en="Food Licence">अन्न परवाना</span><span class="doc-en">Food Licence</span></h3>
@@ -1819,7 +1873,7 @@
         </div>
 
         <!-- 15. चरित्र पडताळणी -->
-        <div class="doc-accordion animate-on-scroll" data-search="चरित्र पडताळणी police clearance">
+        <div class="doc-accordion animate-on-scroll dc-pink" data-search="चरित्र पडताळणी police clearance">
           <div class="doc-accordion-header" onclick="toggleAccordion(this)">
             <div class="doc-icon">🔍</div>
             <h3><span data-mr="चरित्र पडताळणी" data-en="Police Clearance">चरित्र पडताळणी</span><span class="doc-en">Police Clearance</span></h3>
@@ -1841,7 +1895,7 @@
         </div>
 
         <!-- 16. शेतकरी योजना -->
-        <div class="doc-accordion animate-on-scroll" data-search="शेतकरी योजना farmer scheme mahadbt">
+        <div class="doc-accordion animate-on-scroll dc-orange" data-search="शेतकरी योजना farmer scheme mahadbt">
           <div class="doc-accordion-header" onclick="toggleAccordion(this)">
             <div class="doc-icon">🌾</div>
             <h3><span data-mr="शेतकरी योजना" data-en="Farmer Scheme">शेतकरी योजना</span><span class="doc-en">Farmer Scheme (MahaDBT)</span></h3>
@@ -1858,7 +1912,7 @@
         </div>
 
         <!-- 17. PF सेवा / UAN -->
-        <div class="doc-accordion animate-on-scroll" data-search="PF सेवा UAN activation e-nomination">
+        <div class="doc-accordion animate-on-scroll dc-purple" data-search="PF सेवा UAN activation e-nomination">
           <div class="doc-accordion-header" onclick="toggleAccordion(this)">
             <div class="doc-icon">💼</div>
             <h3><span data-mr="PF सेवा / UAN Activation" data-en="PF Services / UAN Activation">PF सेवा / UAN Activation</span><span class="doc-en">PF & E-Nomination</span></h3>
@@ -1880,7 +1934,7 @@
         </div>
 
         <!-- 18. उद्यम नोंदणी -->
-        <div class="doc-accordion animate-on-scroll" data-search="उद्यम नोंदणी udyam registration उद्योग आधार">
+        <div class="doc-accordion animate-on-scroll dc-teal" data-search="उद्यम नोंदणी udyam registration उद्योग आधार">
           <div class="doc-accordion-header" onclick="toggleAccordion(this)">
             <div class="doc-icon">🏭</div>
             <h3><span data-mr="उद्यम नोंदणी" data-en="Udyam Registration">उद्यम नोंदणी</span><span class="doc-en">Udyam Registration</span></h3>
@@ -1899,7 +1953,7 @@
         </div>
 
         <!-- 19. मतदान कार्ड नोंदणी -->
-        <div class="doc-accordion animate-on-scroll" data-search="मतदान कार्ड नोंदणी election voter registration">
+        <div class="doc-accordion animate-on-scroll dc-yellow" data-search="मतदान कार्ड नोंदणी election voter registration">
           <div class="doc-accordion-header" onclick="toggleAccordion(this)">
             <div class="doc-icon">🗳️</div>
             <h3><span data-mr="मतदान कार्ड नोंदणी" data-en="Election Card Registration">मतदान कार्ड नोंदणी</span><span class="doc-en">Voter Registration</span></h3>
@@ -1917,7 +1971,7 @@
         </div>
 
         <!-- 20. राजपत्र सेवा -->
-        <div class="doc-accordion animate-on-scroll" data-search="राजपत्र gazette नाव बदल जन्म तारीख">
+        <div class="doc-accordion animate-on-scroll dc-red" data-search="राजपत्र gazette नाव बदल जन्म तारीख">
           <div class="doc-accordion-header" onclick="toggleAccordion(this)">
             <div class="doc-icon">📰</div>
             <h3><span data-mr="राजपत्र सेवा (नाव बदल / जन्म तारीख)" data-en="Gazette (Name Change / DOB)">राजपत्र सेवा (नाव बदल / जन्म तारीख)</span><span class="doc-en">Gazette Services</span></h3>
@@ -1939,7 +1993,7 @@
         </div>
 
         <!-- 21. जीवन प्रमाणपत्र -->
-        <div class="doc-accordion animate-on-scroll" data-search="जीवन प्रमाणपत्र life certificate">
+        <div class="doc-accordion animate-on-scroll dc-lime" data-search="जीवन प्रमाणपत्र life certificate">
           <div class="doc-accordion-header" onclick="toggleAccordion(this)">
             <div class="doc-icon">❤️</div>
             <h3><span data-mr="जीवन प्रमाणपत्र" data-en="Life Certificate">जीवन प्रमाणपत्र</span><span class="doc-en">Life Certificate</span></h3>
@@ -1956,7 +2010,7 @@
         </div>
 
         <!-- 22. 30% महिला आरक्षण -->
-        <div class="doc-accordion animate-on-scroll" data-search="30% महिला आरक्षण प्रमाणपत्र women reservation">
+        <div class="doc-accordion animate-on-scroll dc-sky" data-search="30% महिला आरक्षण प्रमाणपत्र women reservation">
           <div class="doc-accordion-header" onclick="toggleAccordion(this)">
             <div class="doc-icon">👩</div>
             <h3><span data-mr="30% महिला आरक्षण प्रमाणपत्र" data-en="30% Women Reservation Certificate">30% महिला आरक्षण प्रमाणपत्र</span><span class="doc-en">Women Reservation</span></h3>
@@ -1979,7 +2033,7 @@
         </div>
 
         <!-- 23. अल्पभूधारक प्रमाणपत्र -->
-        <div class="doc-accordion animate-on-scroll" data-search="अल्पभूधारक प्रमाणपत्र small landholding">
+        <div class="doc-accordion animate-on-scroll dc-amber" data-search="अल्पभूधारक प्रमाणपत्र small landholding">
           <div class="doc-accordion-header" onclick="toggleAccordion(this)">
             <div class="doc-icon">🌱</div>
             <h3><span data-mr="अल्पभूधारक प्रमाणपत्र" data-en="Small Landholding Certificate">अल्पभूधारक प्रमाणपत्र</span><span class="doc-en">Small Landholding</span></h3>
@@ -1999,7 +2053,7 @@
         </div>
 
         <!-- 24. नमुना SEC -->
-        <div class="doc-accordion animate-on-scroll" data-search="नमुना SEC batch">
+        <div class="doc-accordion animate-on-scroll dc-rose" data-search="नमुना SEC batch">
           <div class="doc-accordion-header" onclick="toggleAccordion(this)">
             <div class="doc-icon">📋</div>
             <h3><span data-mr="नमुना SEC (Batch)" data-en="SEC Form (Batch)">नमुना SEC (Batch)</span><span class="doc-en">SEC Form</span></h3>
@@ -2176,6 +2230,7 @@
 
       <div class="footer-bottom">
         <p>© 2025 <span data-mr="जम्बो ऑनलाईन सेंटर, अहमदपूर" data-en="Jumbo Online Center, Ahmedpur">जम्बो ऑनलाईन सेंटर, अहमदपूर</span> | CSC • Aaple Sarkar • Digital Services | <span data-mr="तालीम तांबोळी" data-en="Taleem Tamboli">तालीम तांबोळी</span></p>
+        <p style="margin-top:6px; font-size:0.78rem; color: rgba(255,255,255,0.45);">Made with ❤️ by <a href="https://yogeshgk9765.github.io/My-Portfolio/" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.65); text-decoration:underline; text-underline-offset:3px;">Yogesh Kalyankar</a></p>
       </div>
     </div>
   </footer>
